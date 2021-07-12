@@ -63,59 +63,65 @@ class _BacNoteState extends State<BacNote> {
         ],
       ),
       body: SafeArea(
-        child: Container(
-          child: ListView(
-            children: [
-              SizedBox(
-                height: 20,
-              ),
-              Column(
-                children: [
-                  Sciences(),
-                  Physique(),
-                  Maths(),
-                  Arabe(),
-                  French(),
-                  Ir(),
-                  English(),
-                  Sport(),
-                ],
-              ),
-              GestureDetector(
-                child: Container(
-                  margin:
-                      EdgeInsets.only(top: 30, bottom: 50, left: 30, right: 30),
-                  height: 70,
-                  width: 20,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(12),
+        child: Stack(children: [
+          Image(
+            image: AssetImage('assets/images/vect.jpg'),
+            fit: BoxFit.contain,
+          ),
+          Container(
+            child: ListView(
+              children: [
+                SizedBox(
+                  height: 20,
+                ),
+                Column(
+                  children: [
+                    Sciences(),
+                    Physique(),
+                    Maths(),
+                    Arabe(),
+                    French(),
+                    Ir(),
+                    English(),
+                    Sport(),
+                  ],
+                ),
+                GestureDetector(
+                  child: Container(
+                    margin: EdgeInsets.only(
+                        top: 30, bottom: 50, left: 30, right: 30),
+                    height: 70,
+                    width: 20,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(12),
+                      ),
                     ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Calculer',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 38,
-                        fontWeight: FontWeight.bold,
+                    child: Center(
+                      child: Text(
+                        'Calculer',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 38,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ResultPage(),
+                      ),
+                    );
+                  },
                 ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ResultPage(),
-                    ),
-                  );
-                },
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
+        ]),
       ),
     );
   }
