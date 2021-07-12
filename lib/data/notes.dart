@@ -1,3 +1,4 @@
+import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
 class Subject {
@@ -60,10 +61,7 @@ class _SciencesState extends State<Sciences> {
             child: Center(
               child: Text(
                 subjects[0].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
+                style: kSubjectNameStyle,
               ),
             ),
           ),
@@ -135,13 +133,7 @@ class _PhysiqueState extends State<Physique> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[1].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[1].name, style: kSubjectNameStyle),
             ),
           ),
           Container(
@@ -212,13 +204,7 @@ class _MathsState extends State<Maths> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[2].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[2].name, style: kSubjectNameStyle),
             ),
           ),
           Container(
@@ -289,13 +275,7 @@ class _ArabeState extends State<Arabe> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[3].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[3].name, style: kSubjectNameStyle),
             ),
           ),
           Container(
@@ -366,13 +346,7 @@ class _FrenchState extends State<French> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[4].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[4].name, style: kSubjectNameStyle),
             ),
           ),
           Container(
@@ -443,13 +417,7 @@ class _IrState extends State<Ir> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[5].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[5].name, style: kSubjectNameStyle),
             ),
           ),
           Container(
@@ -520,13 +488,7 @@ class _EnglishState extends State<English> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[6].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[6].name, style: kSubjectNameStyle),
             ),
           ),
           Container(
@@ -597,13 +559,7 @@ class _SportState extends State<Sport> {
               ),
             ),
             child: Center(
-              child: Text(
-                subjects[7].name,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w300,
-                ),
-              ),
+              child: Text(subjects[7].name, style: kSubjectNameStyle),
             ),
           ),
           Container(

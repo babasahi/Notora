@@ -1,4 +1,5 @@
 import 'package:bac_note/screens/result_page.dart';
+import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:bac_note/data/notes.dart';
 
@@ -32,13 +33,8 @@ class _BacNoteState extends State<BacNote> {
         backgroundColor: Colors.white,
         title: Center(
           child: Text(
-            'BAC NOTE',
-            style: TextStyle(
-              color: Colors.teal,
-              fontSize: 34,
-              fontFamily: 'Ubuntu',
-              fontWeight: FontWeight.bold,
-            ),
+            'BacNote',
+            style: kLogoStyle,
           ),
         ),
       ),
@@ -46,18 +42,6 @@ class _BacNoteState extends State<BacNote> {
         child: Container(
           child: ListView(
             children: [
-              Center(
-                child: Container(
-                  margin: EdgeInsets.only(top: 40),
-                  child: Text(
-                    'Calculez votre moyenne génerale',
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                ),
-              ),
               SizedBox(
                 height: 20,
               ),
