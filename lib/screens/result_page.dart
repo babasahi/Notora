@@ -61,7 +61,10 @@ class ResultPage extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            Container(
+              child: Center(),
+            ),
           ],
         ),
       ),

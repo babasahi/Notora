@@ -35,5 +35,9 @@ flutter:
       fonts:
         - asset: assets/fonts/TitilliumWeb-Regular.ttf
 
+    - family: Inconsolata
+      fonts:
+        - asset: assets/fonts/Inconsolata-Regular.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

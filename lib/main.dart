@@ -1,4 +1,5 @@
 import 'package:bac_note/screens/result_page.dart';
+import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:bac_note/data/notes.dart';
@@ -31,12 +32,35 @@ class _BacNoteState extends State<BacNote> {
       appBar: AppBar(
         elevation: 2,
         backgroundColor: Colors.white,
+        leading: SizedBox(
+          width: 5,
+        ),
         title: Center(
           child: Text(
             'BacNote',
             style: kLogoStyle,
           ),
         ),
+        actions: [
+          GestureDetector(
+            child: Icon(
+              Icons.info,
+              color: Colors.black,
+              size: 32,
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => WhoAreWePage(),
+                ),
+              );
+            },
+          ),
+          SizedBox(
+            width: 5,
+          ),
+        ],
       ),
       body: SafeArea(
         child: Container(
