@@ -36,6 +36,7 @@ class _BacNoteState extends State<BacNote> {
             style: TextStyle(
               color: Colors.teal,
               fontSize: 34,
+              fontFamily: 'Ubuntu',
               fontWeight: FontWeight.bold,
             ),
           ),
