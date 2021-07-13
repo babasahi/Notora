@@ -13,9 +13,9 @@ class ResultPage extends StatelessWidget {
             subjects[6].note * 2 +
             subjects[7].note * 1) /
         32;
-    final double moyOrientation = ((subjects[0].note * 3) +
-            (subjects[1].note * 2) +
-            subjects[3].note +
+    final double moyOrientation = (((subjects[0].note * 3) +
+                (subjects[1].note * 2) +
+                subjects[3].note * 1) +
             moyenne) /
         7;
 
@@ -92,7 +92,7 @@ class ResultPage extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  moyOrientation.toStringAsFixed(4),
+                  moyOrientation.toStringAsFixed(3),
                   style: TextStyle(
                     fontSize: 70,
                     fontWeight: FontWeight.bold,
