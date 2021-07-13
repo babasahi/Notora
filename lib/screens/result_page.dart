@@ -2,17 +2,23 @@ import 'package:bac_note/data/notes.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
-  final double moyenne = (subjects[0].note * 8 +
-          subjects[1].note * 7 +
-          subjects[2].note * 6 +
-          subjects[3].note * 3 +
-          subjects[4].note * 3 +
-          subjects[5].note * 2 +
-          subjects[6].note * 2 +
-          subjects[7].note * 1) /
-      32;
   @override
   Widget build(BuildContext context) {
+    final double moyenne = (subjects[0].note * 8 +
+            subjects[1].note * 7 +
+            subjects[2].note * 6 +
+            subjects[3].note * 3 +
+            subjects[4].note * 3 +
+            subjects[5].note * 2 +
+            subjects[6].note * 2 +
+            subjects[7].note * 1) /
+        32;
+    final double moyOrientation = ((subjects[0].note * 3) +
+            (subjects[1].note * 2) +
+            subjects[3].note +
+            moyenne) /
+        7;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -34,7 +40,7 @@ class ResultPage extends StatelessWidget {
               margin: EdgeInsets.only(top: 90),
               child: Center(
                 child: Text(
-                  'Votre Moyenne :',
+                  'Moyenne Génerale :',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 35,
@@ -63,7 +69,36 @@ class ResultPage extends StatelessWidget {
               ),
             ),
             Container(
-              child: Center(),
+              margin: EdgeInsets.only(top: 10),
+              child: Center(
+                child: Text(
+                  'Moyenne d\'Orientation :',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 35,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(12),
+              height: 220,
+              width: 340,
+              decoration: BoxDecoration(
+                color: Colors.green[400],
+                borderRadius: BorderRadius.all(
+                  Radius.circular(12),
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  moyOrientation.toStringAsFixed(4),
+                  style: TextStyle(
+                    fontSize: 70,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

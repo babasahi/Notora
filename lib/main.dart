@@ -65,7 +65,7 @@ class _BacNoteState extends State<BacNote> {
       body: SafeArea(
         child: Stack(children: [
           Image(
-            image: AssetImage('assets/images/vect.jpg'),
+            image: AssetImage('assets/images/background.jpeg'),
             fit: BoxFit.contain,
           ),
           Container(
