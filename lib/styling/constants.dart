@@ -13,6 +13,21 @@ const TextStyle kMainResultStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+const TextStyle kPercentStyle = TextStyle(
+  fontSize: 20,
+  color: Colors.white,
+  fontFamily: 'TitilliumWeb',
+  fontStyle: FontStyle.italic,
+  fontWeight: FontWeight.bold,
+);
+
+const TextStyle kEmojiStyle = TextStyle(fontSize: 60);
+const TextStyle kCongratulationLabelStyle = TextStyle(
+  fontSize: 52,
+  fontWeight: FontWeight.bold,
+  fontStyle: FontStyle.italic,
+  fontFamily: 'Ubuntu',
+);
 const TextStyle kMainResultLabelStyle = TextStyle(
   fontSize: 42,
   fontFamily: 'Inconsolata',
