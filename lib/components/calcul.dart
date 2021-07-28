@@ -1,23 +1,24 @@
 import 'package:bac_note/screens/notes.dart';
 
 class Calcul {
+  Model model = Model();
   double calculeMoyenn() {
-    double result = (subjects[0].note * 8 +
-            subjects[1].note * 7 +
-            subjects[2].note * 6 +
-            subjects[3].note * 3 +
-            subjects[4].note * 3 +
-            subjects[5].note * 2 +
-            subjects[6].note * 2 +
-            subjects[7].note * 1) /
+    double result = (model.sciences.note * 8 +
+            model.physics.note * 7 +
+            model.mathss.note * 6 +
+            model.arabic.note * 3 +
+            model.french.note * 3 +
+            model.ir.note * 2 +
+            model.english.note * 2 +
+            model.sport.note * 1) /
         32;
     return result;
   }
 
   double calculOrient() {
-    double result = ((subjects[0].note * 3) +
-            (subjects[1].note * 2) +
-            (subjects[2].note) +
+    double result = ((model.sciences.note * 3) +
+            (model.physics.note * 2) +
+            (model.mathss.note) +
             calculeMoyenn()) /
         7;
     return result;
