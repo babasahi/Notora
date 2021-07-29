@@ -1,6 +1,14 @@
-class Subject {
-  Subject(this.note, this.name, this.coefficient);
-  int coefficient;
-  double note = 0;
-  final String name;
+class Subjects {
+  final List<String> names = [
+    'Sciences Naturelles',
+    'Physique et Chimie',
+    'Mathématiques',
+    'Arabe',
+    'Francais',
+    'Instruction Réligieuse',
+    'Anglais',
+    'Education Physique',
+  ];
+
+  List<double> notes = [0, 0, 0, 0, 0, 0, 0, 0];
 }

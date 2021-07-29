@@ -7,10 +7,8 @@ class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Calcul calcul = Calcul();
-    final double moyenne = calcul.calculeMoyenn();
-    final double moyOrientation = calcul.calculOrient();
     List<Widget> presentation = [];
-    if (moyenne >= 8) {
+    if (calcul.calculeMoyenn() >= 8) {
       presentation.add(Congratulation());
     } else {
       presentation.add(Consolation());
@@ -46,7 +44,7 @@ class ResultPage extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                 ),
-                ResultWidget(moyenne, kMainResultStyle, 40),
+                ResultWidget(calcul.calculeMoyenn(), kMainResultStyle, 40),
                 SizedBox(
                   height: 20,
                 ),
@@ -59,8 +57,8 @@ class ResultPage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(12),
-                  child:
-                      ResultWidget(moyOrientation, kSecondaryResultStyle, 24),
+                  child: ResultWidget(
+                      calcul.calculOrient(), kSecondaryResultStyle, 24),
                 ),
               ],
             ),

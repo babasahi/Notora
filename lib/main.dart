@@ -1,9 +1,9 @@
 import 'package:bac_note/components/widgets.dart';
+import 'package:bac_note/data/data.dart';
 import 'package:bac_note/screens/result_page.dart';
 import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:bac_note/screens/notes.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,9 +26,9 @@ class BacNote extends StatefulWidget {
 }
 
 class _BacNoteState extends State<BacNote> {
+  Subjects subjects = Subjects();
   @override
   Widget build(BuildContext context) {
-    Model model = Model();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -78,14 +78,14 @@ class _BacNoteState extends State<BacNote> {
                 ),
                 Column(
                   children: [
-                    SubjectPanel(model.sciences),
-                    SubjectPanel(model.physics),
-                    SubjectPanel(model.mathss),
-                    SubjectPanel(model.arabic),
-                    SubjectPanel(model.french),
-                    SubjectPanel(model.ir),
-                    SubjectPanel(model.english),
-                    SubjectPanel(model.sport),
+                    SubjectPanel(0),
+                    SubjectPanel(1),
+                    SubjectPanel(2),
+                    SubjectPanel(3),
+                    SubjectPanel(4),
+                    SubjectPanel(5),
+                    SubjectPanel(6),
+                    SubjectPanel(7),
                   ],
                 ),
                 GestureDetector(
