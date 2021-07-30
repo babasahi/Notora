@@ -1,4 +1,3 @@
-import 'package:bac_note/components/result_remark_widget.dart';
 import 'package:bac_note/components/subject_card.dart';
 import 'package:bac_note/data/data.dart';
 import 'package:bac_note/screens/result_page.dart';
@@ -22,15 +21,6 @@ class MyApp extends StatelessWidget {
 }
 
 class BacNote extends StatefulWidget {
-  double sciences = 0;
-  double physics = 0;
-  double maths = 0;
-  double arabic = 0;
-  double french = 0;
-  double ir = 0;
-  double english = 0;
-  double sport = 0;
-  Data data = Data();
   @override
   _BacNoteState createState() => _BacNoteState();
 }
@@ -87,14 +77,14 @@ class _BacNoteState extends State<BacNote> {
                 ),
                 Column(
                   children: [
-                    SubjectCard('Sciences Naturelles', widget.sciences),
-                    SubjectCard('Physique et Chimie', widget.physics),
-                    SubjectCard('Mathématiques', widget.maths),
-                    SubjectCard('Arabe', widget.arabic),
-                    SubjectCard('Francais', widget.french),
-                    SubjectCard('Instruction Réligieuse', widget.ir),
-                    SubjectCard('Anglais', widget.english),
-                    SubjectCard('Education Physique', widget.sport),
+                    SubjectCard('Sciences Naturelles', sciences),
+                    SubjectCard('Physique et Chimie', physics),
+                    SubjectCard('Mathématiques', maths),
+                    SubjectCard('Arabe', arabic),
+                    SubjectCard('Francais', french),
+                    SubjectCard('Instruction Réligieuse', ir),
+                    SubjectCard('Anglais', english),
+                    SubjectCard('Education Physique', sport),
                   ],
                 ),
                 GestureDetector(
