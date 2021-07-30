@@ -20,7 +20,7 @@ class _SubjectPanelState extends State<SubjectCard> {
             height: 25,
             width: 60,
             decoration: BoxDecoration(
-              color: Colors.orange,
+              color: Colors.yellow[200],
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(40),
                 topRight: Radius.circular(40),
