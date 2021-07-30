@@ -89,14 +89,13 @@ class ResultWidget extends StatelessWidget {
 }
 
 class SubjectPanel extends StatefulWidget {
-  SubjectPanel(this.id);
-  final int id;
+  SubjectPanel(this.subject);
+  final Subject subject;
   @override
   _SubjectPanelState createState() => _SubjectPanelState();
 }
 
 class _SubjectPanelState extends State<SubjectPanel> {
-  Subjects subjects = Subjects();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -115,7 +114,7 @@ class _SubjectPanelState extends State<SubjectPanel> {
             ),
             child: Center(
                 child: Text(
-              subjects.notes[widget.id].toString(),
+              widget.subject.note.toString(),
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -132,7 +131,7 @@ class _SubjectPanelState extends State<SubjectPanel> {
             ),
             child: Center(
               child: Text(
-                subjects.names[widget.id],
+                widget.subject.name,
                 style: kSubjectNameStyle,
               ),
             ),
@@ -148,14 +147,15 @@ class _SubjectPanelState extends State<SubjectPanel> {
               ),
             ),
             child: Slider(
-              value: subjects.notes[widget.id],
+              value: widget.subject.note,
               max: 20,
               min: 0,
               divisions: 80,
               onChanged: (double newValue) {
                 setState(() {
-                  subjects.notes[widget.id] = newValue;
-                  print(subjects.notes[widget.id]);
+                  print(newValue);
+                  widget.subject.note = newValue;
+                  print(widget.subject.note);
                 });
               },
             ),

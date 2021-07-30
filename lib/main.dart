@@ -21,12 +21,12 @@ class MyApp extends StatelessWidget {
 }
 
 class BacNote extends StatefulWidget {
+  Data data = Data();
   @override
   _BacNoteState createState() => _BacNoteState();
 }
 
 class _BacNoteState extends State<BacNote> {
-  Subjects subjects = Subjects();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,10 +66,10 @@ class _BacNoteState extends State<BacNote> {
       ),
       body: SafeArea(
         child: Stack(children: [
-          Image(
+          /* Image(
             image: AssetImage('assets/images/background.jpeg'),
             fit: BoxFit.contain,
-          ),
+          ),*/
           Container(
             child: ListView(
               children: [
@@ -78,14 +78,14 @@ class _BacNoteState extends State<BacNote> {
                 ),
                 Column(
                   children: [
-                    SubjectPanel(0),
-                    SubjectPanel(1),
-                    SubjectPanel(2),
-                    SubjectPanel(3),
-                    SubjectPanel(4),
-                    SubjectPanel(5),
-                    SubjectPanel(6),
-                    SubjectPanel(7),
+                    SubjectPanel(widget.data.sciences),
+                    SubjectPanel(widget.data.physics),
+                    SubjectPanel(widget.data.maths),
+                    SubjectPanel(widget.data.arabic),
+                    SubjectPanel(widget.data.french),
+                    SubjectPanel(widget.data.ir),
+                    SubjectPanel(widget.data.english),
+                    SubjectPanel(widget.data.sport),
                   ],
                 ),
                 GestureDetector(
