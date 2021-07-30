@@ -26,6 +26,8 @@ class BacNote extends StatefulWidget {
 }
 
 class _BacNoteState extends State<BacNote> {
+  Data data = Data();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,14 +79,14 @@ class _BacNoteState extends State<BacNote> {
                 ),
                 Column(
                   children: [
-                    SubjectCard('Sciences Naturelles', sciences),
-                    SubjectCard('Physique et Chimie', physics),
-                    SubjectCard('Mathématiques', maths),
-                    SubjectCard('Arabe', arabic),
-                    SubjectCard('Francais', french),
-                    SubjectCard('Instruction Réligieuse', ir),
-                    SubjectCard('Anglais', english),
-                    SubjectCard('Education Physique', sport),
+                    SubjectCard('Sciences Naturelles', data.sciences),
+                    SubjectCard('Physique et Chimie', data.physics),
+                    SubjectCard('Mathématiques', data.maths),
+                    SubjectCard('Arabe', data.arabic),
+                    SubjectCard('Francais', data.french),
+                    SubjectCard('Instruction Réligieuse', data.ir),
+                    SubjectCard('Anglais', data.english),
+                    SubjectCard('Education Physique', data.sport),
                   ],
                 ),
                 GestureDetector(
