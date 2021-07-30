@@ -1,6 +1,6 @@
 import 'package:bac_note/data/data.dart';
 
-class Calcul {
+class Calculator {
   Data data = Data();
   double calculeMoyenn() {
     double result = (data.sciences.note * 8 +

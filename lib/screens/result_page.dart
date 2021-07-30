@@ -1,12 +1,13 @@
-import 'package:bac_note/components/calcul.dart';
-import 'package:bac_note/components/widgets.dart';
+import 'package:bac_note/components/calculator.dart';
+import 'package:bac_note/components/result_widget.dart';
+import 'package:bac_note/components/result_remark_widget.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Calcul calcul = Calcul();
+    Calculator calcul = Calculator();
     List<Widget> presentation = [];
     if (calcul.calculeMoyenn() >= 8) {
       presentation.add(Congratulation());

@@ -1,4 +1,5 @@
-import 'package:bac_note/components/widgets.dart';
+import 'package:bac_note/components/result_remark_widget.dart';
+import 'package:bac_note/components/subject_card.dart';
 import 'package:bac_note/data/data.dart';
 import 'package:bac_note/screens/result_page.dart';
 import 'package:bac_note/screens/who_are_we_screen.dart';
@@ -78,14 +79,14 @@ class _BacNoteState extends State<BacNote> {
                 ),
                 Column(
                   children: [
-                    SubjectPanel(widget.data.sciences),
-                    SubjectPanel(widget.data.physics),
-                    SubjectPanel(widget.data.maths),
-                    SubjectPanel(widget.data.arabic),
-                    SubjectPanel(widget.data.french),
-                    SubjectPanel(widget.data.ir),
-                    SubjectPanel(widget.data.english),
-                    SubjectPanel(widget.data.sport),
+                    SubjectCard(widget.data.sciences),
+                    SubjectCard(widget.data.physics),
+                    SubjectCard(widget.data.maths),
+                    SubjectCard(widget.data.arabic),
+                    SubjectCard(widget.data.french),
+                    SubjectCard(widget.data.ir),
+                    SubjectCard(widget.data.english),
+                    SubjectCard(widget.data.sport),
                   ],
                 ),
                 GestureDetector(
