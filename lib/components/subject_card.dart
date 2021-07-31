@@ -2,9 +2,10 @@ import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
 class SubjectCard extends StatefulWidget {
-  SubjectCard(this.name, this.value);
+  SubjectCard(this.note, this.name);
+  double note;
   String name;
-  double value;
+
   @override
   _SubjectPanelState createState() => _SubjectPanelState();
 }
@@ -28,7 +29,7 @@ class _SubjectPanelState extends State<SubjectCard> {
             ),
             child: Center(
                 child: Text(
-              widget.value.toString(),
+              widget.note.toString(),
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -61,15 +62,13 @@ class _SubjectPanelState extends State<SubjectCard> {
               ),
             ),
             child: Slider(
-              value: widget.value,
+              value: widget.note,
               max: 20,
               min: 0,
               divisions: 80,
               onChanged: (double newValue) {
                 setState(() {
-                  print(newValue);
-                  widget.value = newValue;
-                  print(widget.value);
+                  widget.note = newValue;
                 });
               },
             ),

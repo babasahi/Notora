@@ -1,15 +1,27 @@
-import 'package:bac_note/components/calculator.dart';
 import 'package:bac_note/components/result_widget.dart';
 import 'package:bac_note/components/result_remark_widget.dart';
-import 'package:bac_note/data/data.dart';
+import 'package:bac_note/components/subjects.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
-  Calculator calculator = Calculator();
+  final double moyenn = (subjects[0].note * 8 +
+          subjects[1].note * 7 +
+          subjects[2].note * 6 +
+          subjects[3].note * 3 +
+          subjects[4].note * 3 +
+          subjects[5].note * 2 +
+          subjects[6].note * 2 +
+          subjects[7].note) /
+      32;
   @override
   Widget build(BuildContext context) {
-    double moyenn = calculator.calculeMoyenn();
+    final moyOrient = (subjects[0].note * 3 +
+            subjects[1].note * 2 +
+            subjects[2].note +
+            moyenn) /
+        7;
+
     List<Widget> presentation = [];
     if (moyenn >= 8) {
       presentation.add(Congratulation());
@@ -60,8 +72,7 @@ class ResultPage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(12),
-                  child: ResultWidget(
-                      calculator.calculOrient(), kSecondaryResultStyle, 24),
+                  child: ResultWidget(moyOrient, kSecondaryResultStyle, 24),
                 ),
               ],
             ),

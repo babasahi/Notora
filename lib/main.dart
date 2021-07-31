@@ -1,5 +1,4 @@
-import 'package:bac_note/components/subject_card.dart';
-import 'package:bac_note/data/data.dart';
+import 'package:bac_note/components/subjects.dart';
 import 'package:bac_note/screens/result_page.dart';
 import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
@@ -26,8 +25,6 @@ class BacNote extends StatefulWidget {
 }
 
 class _BacNoteState extends State<BacNote> {
-  Data data = Data();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,10 +64,6 @@ class _BacNoteState extends State<BacNote> {
       ),
       body: SafeArea(
         child: Stack(children: [
-          /* Image(
-            image: AssetImage('assets/images/background.jpeg'),
-            fit: BoxFit.contain,
-          ),*/
           Container(
             child: ListView(
               children: [
@@ -79,14 +72,14 @@ class _BacNoteState extends State<BacNote> {
                 ),
                 Column(
                   children: [
-                    SubjectCard('Sciences Naturelles', data.sciences),
-                    SubjectCard('Physique et Chimie', data.physics),
-                    SubjectCard('Mathématiques', data.maths),
-                    SubjectCard('Arabe', data.arabic),
-                    SubjectCard('Francais', data.french),
-                    SubjectCard('Instruction Réligieuse', data.ir),
-                    SubjectCard('Anglais', data.english),
-                    SubjectCard('Education Physique', data.sport),
+                    Sciences(),
+                    Physique(),
+                    Maths(),
+                    Arabe(),
+                    French(),
+                    Ir(),
+                    English(),
+                    Sport(),
                   ],
                 ),
                 GestureDetector(
