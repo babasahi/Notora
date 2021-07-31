@@ -1,5 +1,4 @@
-import 'package:bac_note/components/subject_card.dart';
-import 'package:bac_note/styling/constants.dart';
+import 'package:bac_note/components/widgets.dart';
 import 'package:flutter/material.dart';
 
 class Subject {
@@ -28,7 +27,37 @@ class Sciences extends StatefulWidget {
 class _SciencesState extends State<Sciences> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[0].note, 'Sciences Naturelles');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[0].note),
+          SubjectName(subjects[0].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[0].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[0].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -40,7 +69,37 @@ class Physique extends StatefulWidget {
 class _PhysiqueState extends State<Physique> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[1].note, 'Physique et Chimie');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[1].note),
+          SubjectName(subjects[1].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[1].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[1].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -52,7 +111,37 @@ class Maths extends StatefulWidget {
 class _MathsState extends State<Maths> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[3].note, 'Mathématiques');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[2].note),
+          SubjectName(subjects[2].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[2].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[2].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -64,7 +153,37 @@ class Arabe extends StatefulWidget {
 class _ArabeState extends State<Arabe> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[4].note, 'Arabe');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[3].note),
+          SubjectName(subjects[3].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[3].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[3].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -76,7 +195,37 @@ class French extends StatefulWidget {
 class _FrenchState extends State<French> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[5].note, 'Francais');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[4].note),
+          SubjectName(subjects[4].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[4].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[4].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -88,7 +237,37 @@ class Ir extends StatefulWidget {
 class _IrState extends State<Ir> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[6].note, 'Instruction Réligieuse');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[5].note),
+          SubjectName(subjects[5].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[5].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[5].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -100,7 +279,37 @@ class English extends StatefulWidget {
 class _EnglishState extends State<English> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[7].note, 'Anglais');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[6].note),
+          SubjectName(subjects[6].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[6].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[6].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -112,6 +321,36 @@ class Sport extends StatefulWidget {
 class _SportState extends State<Sport> {
   @override
   Widget build(BuildContext context) {
-    return SubjectCard(subjects[8].note, 'Sport');
+    return Container(
+      margin: EdgeInsets.only(bottom: 24, right: 6, left: 6),
+      child: Column(
+        children: [
+          CurrentSubjectValue(subjects[7].note),
+          SubjectName(subjects[7].name),
+          Container(
+            height: 40,
+            width: 300,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18),
+              ),
+            ),
+            child: Slider(
+              value: subjects[7].note,
+              max: 20,
+              min: 0,
+              divisions: 80,
+              onChanged: (double newValue) {
+                setState(() {
+                  subjects[7].note = newValue;
+                });
+              },
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
