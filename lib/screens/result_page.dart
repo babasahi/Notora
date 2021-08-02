@@ -50,16 +50,13 @@ class ResultPage extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.only(bottom: 12),
-                  child: Column(
-                    children: [
-                      presentation[0],
-                    ],
-                  ),
+                  child: moyenn >= 8 ? Congratulation() : Consolation(),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 10),
                 ),
-                ResultWidget(moyenn, kMainResultStyle, 40),
+                ResultWidget(moyenn, kMainResultStyle, 40,
+                    moyenn >= 8 ? Colors.green : Colors.orange),
                 SizedBox(
                   height: 20,
                 ),
@@ -72,7 +69,8 @@ class ResultPage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(12),
-                  child: ResultWidget(moyOrient, kSecondaryResultStyle, 24),
+                  child: ResultWidget(moyOrient, kSecondaryResultStyle, 24,
+                      moyenn >= 8 ? Colors.green : Colors.orange),
                 ),
               ],
             ),

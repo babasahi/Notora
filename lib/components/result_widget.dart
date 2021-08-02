@@ -6,10 +6,12 @@ class ResultWidget extends StatelessWidget {
     this.moyenne,
     this.style,
     this.padding,
+    this.color,
   );
   final double padding;
   final TextStyle style;
   final double moyenne;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class ResultWidget extends StatelessWidget {
       height: 190,
       width: 340,
       decoration: BoxDecoration(
-        color: Colors.orange[400],
+        color: color,
         borderRadius: BorderRadius.all(
           Radius.circular(12),
         ),

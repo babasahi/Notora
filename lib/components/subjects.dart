@@ -11,7 +11,7 @@ class Subject {
 List<Subject> subjects = [
   Subject('Sciences Naturelles', 8),
   Subject('Physique et Chimie', 7),
-  Subject('Mathématiques', 86),
+  Subject('Mathématiques', 6),
   Subject('Arabe', 3),
   Subject('Francais', 3),
   Subject('Instruction Réligieuse', 2),
