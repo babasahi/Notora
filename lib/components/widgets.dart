@@ -10,7 +10,7 @@ class SubjectName extends StatelessWidget {
       height: 55,
       width: 360,
       decoration: BoxDecoration(
-        color: Colors.yellow[400],
+        color: Colors.grey[200],
         borderRadius: BorderRadius.all(
           Radius.circular(18),
         ),
@@ -34,7 +34,7 @@ class CurrentSubjectValue extends StatelessWidget {
       height: 25,
       width: 60,
       decoration: BoxDecoration(
-        color: Colors.orange,
+        color: Colors.blue[400],
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(40),
           topRight: Radius.circular(40),
@@ -44,6 +44,8 @@ class CurrentSubjectValue extends StatelessWidget {
           child: Text(
         note.toString(),
         style: TextStyle(
+          fontSize: 19,
+          fontFamily: 'Ubuntu',
           fontWeight: FontWeight.bold,
         ),
       )),

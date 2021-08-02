@@ -61,16 +61,16 @@ class ResultPage extends StatelessWidget {
                   height: 20,
                 ),
                 Container(
+                  margin: EdgeInsets.all(12),
+                  child: ResultWidget(moyOrient, kSecondaryResultStyle, 24,
+                      moyenn >= 8 ? Colors.green : Colors.orange),
+                ),
+                Container(
                   margin: EdgeInsets.only(top: 10),
                   child: Center(
                     child: Text('Moyenne d\'Orientation ',
                         style: kSecondaryResultLabelStyle),
                   ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(12),
-                  child: ResultWidget(moyOrient, kSecondaryResultStyle, 24,
-                      moyenn >= 8 ? Colors.green : Colors.orange),
                 ),
               ],
             ),

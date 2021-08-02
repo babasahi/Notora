@@ -9,14 +9,14 @@ const TextStyle kLogoStyle = TextStyle(
 );
 const TextStyle kMainResultStyle = TextStyle(
   fontSize: 80,
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Ubuntu',
   fontWeight: FontWeight.bold,
 );
 
 const TextStyle kPercentStyle = TextStyle(
   fontSize: 20,
   color: Colors.white,
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Ubuntu',
   fontStyle: FontStyle.italic,
   fontWeight: FontWeight.bold,
 );
@@ -37,7 +37,7 @@ const TextStyle kMainResultLabelStyle = TextStyle(
 const TextStyle kSecondaryResultLabelStyle = TextStyle(
   fontSize: 30,
   fontFamily: 'Inconsolata',
-  fontWeight: FontWeight.bold,
+  fontWeight: FontWeight.normal,
 );
 
 const TextStyle kSecondaryResultStyle = TextStyle(
@@ -46,7 +46,7 @@ const TextStyle kSecondaryResultStyle = TextStyle(
   fontWeight: FontWeight.bold,
 );
 const TextStyle kSubjectNameStyle = TextStyle(
-  fontSize: 18,
-  fontFamily: 'TitilliumWeb',
-  fontWeight: FontWeight.w600,
+  fontSize: 28,
+  fontFamily: 'Inconsolata',
+  fontWeight: FontWeight.bold,
 );

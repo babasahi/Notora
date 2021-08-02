@@ -100,6 +100,7 @@ class _BacNoteState extends State<BacNote> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 38,
+                          fontFamily: 'TitilliumWeb',
                           fontWeight: FontWeight.bold,
                         ),
                       ),

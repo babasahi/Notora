@@ -37,7 +37,7 @@ class _SciencesState extends State<Sciences> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -79,7 +79,7 @@ class _PhysiqueState extends State<Physique> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -121,7 +121,7 @@ class _MathsState extends State<Maths> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -163,7 +163,7 @@ class _ArabeState extends State<Arabe> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -205,7 +205,7 @@ class _FrenchState extends State<French> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -247,7 +247,7 @@ class _IrState extends State<Ir> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -289,7 +289,7 @@ class _EnglishState extends State<English> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
@@ -331,7 +331,7 @@ class _SportState extends State<Sport> {
             height: 40,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.yellow,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(18),
                 bottomLeft: Radius.circular(18),
