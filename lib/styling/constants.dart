@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+const moyenStateFalseColor = Colors.red;
+const moyenStateTrueColor = Colors.white;
+
 const TextStyle kLogoStyle = TextStyle(
   color: Colors.black,
   fontSize: 34,
@@ -47,6 +50,7 @@ const TextStyle kSecondaryResultStyle = TextStyle(
 );
 const TextStyle kSubjectNameStyle = TextStyle(
   fontSize: 28,
+  color: Colors.black,
   fontFamily: 'Inconsolata',
   fontWeight: FontWeight.bold,
 );

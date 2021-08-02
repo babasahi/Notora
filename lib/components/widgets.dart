@@ -45,6 +45,7 @@ class CurrentSubjectValue extends StatelessWidget {
         note.toString(),
         style: TextStyle(
           fontSize: 19,
+          color: note >= 10 ? moyenStateTrueColor : moyenStateFalseColor,
           fontFamily: 'Ubuntu',
           fontWeight: FontWeight.bold,
         ),
