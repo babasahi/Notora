@@ -1,4 +1,4 @@
-import 'package:bac_note/main.dart';
+import 'package:bac_note/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class WhoAreWePage extends StatelessWidget {
@@ -23,7 +23,9 @@ class WhoAreWePage extends StatelessWidget {
         child: Container(
           child: ListView(
             children: [
-              Center(
+              /* 
+                 
+                   Center(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 45.0),
                   child: Text(
@@ -91,21 +93,43 @@ class WhoAreWePage extends StatelessWidget {
                   ),
                 ),
               ),
+              
+
+              */
               SizedBox(
-                height: 60,
+                height: 90,
               ),
               Container(
                 margin: EdgeInsets.all(12),
                 child: Column(
                   children: [
-                    Text(
-                      '',
-                      style: TextStyle(
-                        fontFamily: 'Inconsolata',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
-                      textAlign: TextAlign.justify,
+                    Column(
+                      children: [
+                        SizedBox(
+                          height: 50,
+                        ),
+                        Text(
+                          'This Work Is Dedicated To',
+                          style: TextStyle(
+                            fontFamily: 'Inconsolata',
+                            fontWeight: FontWeight.bold,
+                            fontSize: 28,
+                          ),
+                          textAlign: TextAlign.justify,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          'Nessiba Cheikhne',
+                          style: TextStyle(
+                            fontFamily: 'Ubuntu',
+                            fontWeight: FontWeight.bold,
+                            fontSize: 38,
+                          ),
+                          textAlign: TextAlign.justify,
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: 68,
