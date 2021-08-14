@@ -1,5 +1,6 @@
 import 'package:bac_note/screens/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class WhoAreWePage extends StatelessWidget {
   @override
@@ -23,9 +24,7 @@ class WhoAreWePage extends StatelessWidget {
         child: Container(
           child: ListView(
             children: [
-              /* 
-                 
-                   Center(
+              Center(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 45.0),
                   child: Text(
@@ -69,33 +68,42 @@ class WhoAreWePage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Text(
-                            'Hamadi Omar',
-                            style: TextStyle(
-                              fontFamily: 'Nunito',
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic,
-                              fontSize: 20,
-                            ),
-                          ),
-                          Text(
-                            'Babe Saleh Mahfoud',
-                            style: TextStyle(
-                              fontFamily: 'Nunito',
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic,
-                              fontSize: 20,
-                            ),
-                          ),
+                          AnimatedTextKit(
+                              isRepeatingAnimation: false,
+                              animatedTexts: [
+                                TyperAnimatedText(
+                                  'Hamadi Omar',
+                                  textStyle: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 20,
+                                  ),
+                                  speed: Duration(
+                                    milliseconds: 250,
+                                  ),
+                                ),
+                              ]),
+                          AnimatedTextKit(
+                              isRepeatingAnimation: false,
+                              animatedTexts: [
+                                TyperAnimatedText(
+                                  'Babe Saleh Mahfoud',
+                                  textStyle: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 20,
+                                  ),
+                                  speed: Duration(milliseconds: 250),
+                                ),
+                              ]),
                         ],
                       ),
                     ],
                   ),
                 ),
               ),
-              
-
-              */
               SizedBox(
                 height: 90,
               ),
@@ -103,34 +111,6 @@ class WhoAreWePage extends StatelessWidget {
                 margin: EdgeInsets.all(12),
                 child: Column(
                   children: [
-                    Column(
-                      children: [
-                        SizedBox(
-                          height: 50,
-                        ),
-                        Text(
-                          'This Work Is Dedicated To',
-                          style: TextStyle(
-                            fontFamily: 'Inconsolata',
-                            fontWeight: FontWeight.bold,
-                            fontSize: 28,
-                          ),
-                          textAlign: TextAlign.justify,
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          'Nessiba Cheikhne',
-                          style: TextStyle(
-                            fontFamily: 'Ubuntu',
-                            fontWeight: FontWeight.bold,
-                            fontSize: 38,
-                          ),
-                          textAlign: TextAlign.justify,
-                        ),
-                      ],
-                    ),
                     SizedBox(
                       height: 68,
                     ),
@@ -186,11 +166,23 @@ class WhoAreWePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Icon(Icons.facebook),
-                      Icon(Icons.language),
-                      Icon(Icons.email),
-                      Icon(
-                        Icons.phone,
+                      GestureDetector(
+                        child: Icon(Icons.facebook),
+                        onTap: () {},
+                      ),
+                      GestureDetector(
+                        child: Icon(Icons.language),
+                        onTap: () {},
+                      ),
+                      GestureDetector(
+                        child: Icon(Icons.email),
+                        onTap: () {},
+                      ),
+                      GestureDetector(
+                        child: Icon(
+                          Icons.phone,
+                        ),
+                        onTap: () {},
                       ),
                     ],
                   ),
