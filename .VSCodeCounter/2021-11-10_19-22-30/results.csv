@@ -1,0 +1,37 @@
+"filename", "language", "YAML", "Dart", "Markdown", "JSON", "C++", "XML", "Properties", "Groovy", "Kotlin", "Swift", "HTML", "comment", "blank", "total"
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\README.md", "Markdown", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 17
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\build.gradle", "Groovy", 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 3, 11, 60
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\debug\AndroidManifest.xml", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 3, 1, 8
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\AndroidManifest.xml", "XML", 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 11, 1, 42
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\kotlin\com\example\bac_note\MainActivity.kt", "Kotlin", 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 3, 7
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\drawable-v21\launch_background.xml", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 7, 2, 13
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\drawable\launch_background.xml", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 7, 2, 13
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\values-night\styles.xml", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 1, 19
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\values\styles.xml", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 9, 1, 19
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\profile\AndroidManifest.xml", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 3, 1, 8
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\build.gradle", "Groovy", 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 5, 30
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\gradle.properties", "Properties", 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\gradle\wrapper\gradle-wrapper.properties", "Properties", 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 1, 1, 7
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\settings.gradle", "Groovy", 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 4, 12
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\android\settings_aar.gradle", "Groovy", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\AppDelegate.swift", "Swift", 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 2, 14
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json", "JSON", 0, 0, 0, 122, 0, 0, 0, 0, 0, 0, 0, 0, 1, 123
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json", "JSON", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md", "Markdown", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Base.lproj\LaunchScreen.storyboard", "XML", 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 1, 1, 38
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Base.lproj\Main.storyboard", "XML", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 1, 1, 27
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Runner-Bridging-Header.h", "C++", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\result_remark_widget.dart", "Dart", 0, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 86
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\result_widget.dart", "Dart", 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 67
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\subjects.dart", "Dart", 0, 337, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 357
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\widgets.dart", "Dart", 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 56
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\main.dart", "Dart", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 19
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\screens\main_screen.dart", "Dart", 0, 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 111
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\screens\result_page.dart", "Dart", 0, 82, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 86
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\screens\who_are_we_screen.dart", "Dart", 0, 185, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 187
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\styling\constants.dart", "Dart", 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 57
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\pubspec.yaml", "YAML", 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 13, 50
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\test\widget_test.dart", "Dart", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 31
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\web\index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 79, 14, 6, 99
+"c:\MyProjects\Flutter\Bac Note Project\bac_note\web\manifest.json", "JSON", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"Total", "-", 33, 986, 13, 168, 1, 125, 8, 80, 4, 12, 79, 83, 132, 1724

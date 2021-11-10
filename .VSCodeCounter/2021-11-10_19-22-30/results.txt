@@ -1,0 +1,98 @@
+Date : 2021-11-10 19:22:30
+Directory : c:\MyProjects\Flutter\Bac Note Project\bac_note
+Total : 35 files,  1509 codes, 83 comments, 132 blanks, all 1724 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Dart       |         10 |        986 |         10 |         61 |      1,057 |
+| JSON       |          3 |        168 |          0 |          3 |        171 |
+| XML        |          9 |        125 |         51 |         11 |        187 |
+| Groovy     |          4 |         80 |          3 |         21 |        104 |
+| HTML       |          1 |         79 |         14 |          6 |         99 |
+| YAML       |          1 |         33 |          4 |         13 |         50 |
+| Markdown   |          2 |         13 |          0 |          9 |         22 |
+| Swift      |          1 |         12 |          0 |          2 |         14 |
+| Properties |          2 |          8 |          1 |          2 |         11 |
+| Kotlin     |          1 |          4 |          0 |          3 |          7 |
+| C++        |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                             | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                |         35 |      1,509 |         83 |        132 |      1,724 |
+| android                                                                                                          |         14 |        156 |         53 |         35 |        244 |
+| android\app                                                                                                      |          9 |        114 |         52 |         23 |        189 |
+| android\app\src                                                                                                  |          8 |         68 |         49 |         12 |        129 |
+| android\app\src\debug                                                                                            |          1 |          4 |          3 |          1 |          8 |
+| android\app\src\main                                                                                             |          6 |         60 |         43 |         10 |        113 |
+| android\app\src\main\kotlin                                                                                      |          1 |          4 |          0 |          3 |          7 |
+| android\app\src\main\kotlin\com                                                                                  |          1 |          4 |          0 |          3 |          7 |
+| android\app\src\main\kotlin\com\example                                                                          |          1 |          4 |          0 |          3 |          7 |
+| android\app\src\main\kotlin\com\example\bac_note                                                                 |          1 |          4 |          0 |          3 |          7 |
+| android\app\src\main\res                                                                                         |          4 |         26 |         32 |          6 |         64 |
+| android\app\src\main\res\drawable                                                                                |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\drawable-v21                                                                            |          1 |          4 |          7 |          2 |         13 |
+| android\app\src\main\res\values                                                                                  |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\main\res\values-night                                                                            |          1 |          9 |          9 |          1 |         19 |
+| android\app\src\profile                                                                                          |          1 |          4 |          3 |          1 |          8 |
+| android\gradle                                                                                                   |          1 |          5 |          1 |          1 |          7 |
+| android\gradle\wrapper                                                                                           |          1 |          5 |          1 |          1 |          7 |
+| ios                                                                                                              |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner                                                                                                       |          7 |        222 |          2 |          9 |        233 |
+| ios\Runner\Assets.xcassets                                                                                       |          3 |        148 |          0 |          4 |        152 |
+| ios\Runner\Assets.xcassets\AppIcon.appiconset                                                                    |          1 |        122 |          0 |          1 |        123 |
+| ios\Runner\Assets.xcassets\LaunchImage.imageset                                                                  |          2 |         26 |          0 |          3 |         29 |
+| ios\Runner\Base.lproj                                                                                            |          2 |         61 |          2 |          2 |         65 |
+| lib                                                                                                              |          9 |        972 |          0 |         54 |      1,026 |
+| lib\components                                                                                                   |          4 |        532 |          0 |         34 |        566 |
+| lib\screens                                                                                                      |          3 |        375 |          0 |          9 |        384 |
+| lib\styling                                                                                                      |          1 |         50 |          0 |          7 |         57 |
+| test                                                                                                             |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                                              |          2 |        102 |         14 |          7 |        123 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                         | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\README.md                                                        | Markdown   |         10 |          0 |          7 |         17 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\build.gradle                                         | Groovy     |         46 |          3 |         11 |         60 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\debug\AndroidManifest.xml                        | XML        |          4 |          3 |          1 |          8 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\AndroidManifest.xml                         | XML        |         30 |         11 |          1 |         42 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\kotlin\com\example\bac_note\MainActivity.kt | Kotlin     |          4 |          0 |          3 |          7 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\drawable-v21\launch_background.xml      | XML        |          4 |          7 |          2 |         13 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\drawable\launch_background.xml          | XML        |          4 |          7 |          2 |         13 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\values-night\styles.xml                 | XML        |          9 |          9 |          1 |         19 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\main\res\values\styles.xml                       | XML        |          9 |          9 |          1 |         19 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\app\src\profile\AndroidManifest.xml                      | XML        |          4 |          3 |          1 |          8 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\build.gradle                                             | Groovy     |         25 |          0 |          5 |         30 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\gradle.properties                                        | Properties |          3 |          0 |          1 |          4 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\gradle\wrapper\gradle-wrapper.properties                 | Properties |          5 |          1 |          1 |          7 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\settings.gradle                                          | Groovy     |          8 |          0 |          4 |         12 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\android\settings_aar.gradle                                      | Groovy     |          1 |          0 |          1 |          2 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\AppDelegate.swift                                     | Swift      |         12 |          0 |          2 |         14 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Assets.xcassets\AppIcon.appiconset\Contents.json      | JSON       |        122 |          0 |          1 |        123 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Assets.xcassets\LaunchImage.imageset\Contents.json    | JSON       |         23 |          0 |          1 |         24 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Assets.xcassets\LaunchImage.imageset\README.md        | Markdown   |          3 |          0 |          2 |          5 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Base.lproj\LaunchScreen.storyboard                    | XML        |         36 |          1 |          1 |         38 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Base.lproj\Main.storyboard                            | XML        |         25 |          1 |          1 |         27 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\ios\Runner\Runner-Bridging-Header.h                              | C++        |          1 |          0 |          1 |          2 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\result_remark_widget.dart                         | Dart       |         83 |          0 |          3 |         86 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\result_widget.dart                                | Dart       |         59 |          0 |          8 |         67 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\subjects.dart                                     | Dart       |        337 |          0 |         20 |        357 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\components\widgets.dart                                      | Dart       |         53 |          0 |          3 |         56 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\main.dart                                                    | Dart       |         15 |          0 |          4 |         19 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\screens\main_screen.dart                                     | Dart       |        108 |          0 |          3 |        111 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\screens\result_page.dart                                     | Dart       |         82 |          0 |          4 |         86 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\screens\who_are_we_screen.dart                               | Dart       |        185 |          0 |          2 |        187 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\lib\styling\constants.dart                                       | Dart       |         50 |          0 |          7 |         57 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\pubspec.yaml                                                     | YAML       |         33 |          4 |         13 |         50 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\test\widget_test.dart                                            | Dart       |         14 |         10 |          7 |         31 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\web\index.html                                                   | HTML       |         79 |         14 |          6 |         99 |
+| c:\MyProjects\Flutter\Bac Note Project\bac_note\web\manifest.json                                                | JSON       |         23 |          0 |          1 |         24 |
+| Total                                                                                                            |            |      1,509 |         83 |        132 |      1,724 |
++------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

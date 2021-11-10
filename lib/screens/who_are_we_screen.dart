@@ -48,13 +48,7 @@ class WhoAreWePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          CircleAvatar(
-                            radius: 60,
-                            backgroundImage:
-                                AssetImage('assets/images/hemadi.jpg'),
-                          ),
                           CircleAvatar(
                             radius: 60,
                             backgroundImage:
@@ -63,43 +57,22 @@ class WhoAreWePage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        height: 12,
+                        height: 48,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          AnimatedTextKit(
-                              isRepeatingAnimation: false,
-                              animatedTexts: [
-                                TyperAnimatedText(
-                                  'Hamadi Omar',
-                                  textStyle: TextStyle(
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.bold,
-                                    fontStyle: FontStyle.italic,
-                                    fontSize: 20,
-                                  ),
-                                  speed: Duration(
-                                    milliseconds: 250,
-                                  ),
-                                ),
-                              ]),
-                          AnimatedTextKit(
-                              isRepeatingAnimation: false,
-                              animatedTexts: [
-                                TyperAnimatedText(
-                                  'Babe Saleh Mahfoud',
-                                  textStyle: TextStyle(
-                                    fontFamily: 'Nunito',
-                                    fontWeight: FontWeight.bold,
-                                    fontStyle: FontStyle.italic,
-                                    fontSize: 20,
-                                  ),
-                                  speed: Duration(milliseconds: 250),
-                                ),
-                              ]),
-                        ],
-                      ),
+                      AnimatedTextKit(
+                          isRepeatingAnimation: false,
+                          animatedTexts: [
+                            TyperAnimatedText(
+                              'Babe Saleh Mahfoud',
+                              textStyle: TextStyle(
+                                fontFamily: 'Nunito',
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: 40,
+                              ),
+                              speed: Duration(milliseconds: 200),
+                            ),
+                          ]),
                     ],
                   ),
                 ),
