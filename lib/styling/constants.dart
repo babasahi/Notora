@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-const moyenStateFalseColor = Colors.red;
-const moyenStateTrueColor = Colors.white;
-
 const TextStyle kLogoStyle = TextStyle(
   color: Colors.black,
   fontSize: 34,
@@ -18,9 +15,8 @@ const TextStyle kMainResultStyle = TextStyle(
 
 const TextStyle kPercentStyle = TextStyle(
   fontSize: 20,
-  color: Colors.white,
+  color: Colors.black,
   fontFamily: 'Ubuntu',
-  fontStyle: FontStyle.italic,
   fontWeight: FontWeight.bold,
 );
 

@@ -1,14 +1,37 @@
 import 'package:bac_note/components/result_widget.dart';
 import 'package:bac_note/components/result_remark_widget.dart';
+import 'package:bac_note/screens/main_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
-class ResultPage extends StatelessWidget {
-  final double moyenn = 32;
+class ResultPage extends StatefulWidget {
+  @override
+  State<ResultPage> createState() => _ResultPageState();
+}
+
+class _ResultPageState extends State<ResultPage> {
+  late double moyenne;
+
+  late double moyOrient;
+
+  @override
+  void initState() {
+    moyenne = (sciences * 8 +
+            physics * 7 +
+            maths * 6 +
+            insrel * 2 +
+            arabic * 3 +
+            french * 3 +
+            english * 2 +
+            sport) /
+        32;
+
+    moyOrient = (sciences * 3 + physics * 2 + maths + moyenne) / 7;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final moyOrient = 7;
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -23,40 +46,11 @@ class ResultPage extends StatelessWidget {
           },
         ),
       ),
-      body: Container(
-        child: ListView(
+      body: Center(
+        child: Column(
           children: [
-            Column(
-              children: [
-                Container(
-                  padding: EdgeInsets.only(bottom: 12),
-                  child: moyenn >= 8 ? Congratulation() : Consolation(),
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 10),
-                ),
-                ResultWidget(moyenn, kMainResultStyle, 40,
-                    moyenn >= 8 ? Colors.green : Colors.orange),
-                SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  margin: EdgeInsets.all(12),
-                  child: ResultWidget(17, kSecondaryResultStyle, 24,
-                      moyenn >= 8 ? Colors.green : Colors.orange),
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 10),
-                  child: Center(
-                    child: Text('Moyenne d\'Orientation ',
-                        style: kSecondaryResultLabelStyle),
-                  ),
-                ),
-              ],
-            ),
-            Container(
-              height: 100,
-            ),
+            Text(moyenne.toString()),
+            Text(moyOrient.toString()),
           ],
         ),
       ),

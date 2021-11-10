@@ -53,8 +53,7 @@ class _ResultWidgetState extends State<ResultWidget>
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text((widget.moyenne * controller.value).toStringAsFixed(3),
-                style: widget.style),
+            Text((widget.moyenne).toStringAsFixed(3), style: widget.style),
             Container(
                 padding: EdgeInsets.only(top: widget.padding),
                 child: Text('/ 20', style: kPercentStyle)),
