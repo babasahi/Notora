@@ -4,12 +4,9 @@ import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
-class MainPage extends StatefulWidget {
-  @override
-  _MainPageState createState() => _MainPageState();
-}
+class MainPage extends StatelessWidget {
+  const MainPage({Key? key}) : super(key: key);
 
-class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,6 +43,7 @@ class _MainPageState extends State<MainPage> {
       body: SafeArea(
         child: ListView(
           children: [
+            SubjectNoteWidget(),
             GestureDetector(
               child: Container(
                 margin:
