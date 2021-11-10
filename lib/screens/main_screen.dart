@@ -4,12 +4,12 @@ import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
-class BacNote extends StatefulWidget {
+class MainPage extends StatefulWidget {
   @override
-  _BacNoteState createState() => _BacNoteState();
+  _MainPageState createState() => _MainPageState();
 }
 
-class _BacNoteState extends State<BacNote> {
+class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,14 +17,10 @@ class _BacNoteState extends State<BacNote> {
       appBar: AppBar(
         elevation: 2,
         backgroundColor: Colors.white,
-        leading: SizedBox(
-          width: 5,
-        ),
-        title: Center(
-          child: Text(
-            'BacNote',
-            style: kLogoStyle,
-          ),
+        centerTitle: true,
+        title: Text(
+          'BacNote',
+          style: kLogoStyle,
         ),
         actions: [
           GestureDetector(
@@ -37,7 +33,7 @@ class _BacNoteState extends State<BacNote> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => WhoAreWePage(),
+                  builder: (context) => AboutPage(),
                 ),
               );
             },
@@ -48,62 +44,43 @@ class _BacNoteState extends State<BacNote> {
         ],
       ),
       body: SafeArea(
-        child: Stack(children: [
-          Container(
-            child: ListView(
-              children: [
-                SizedBox(
-                  height: 20,
+        child: ListView(
+          children: [
+            GestureDetector(
+              child: Container(
+                margin:
+                    EdgeInsets.only(top: 30, bottom: 50, left: 30, right: 30),
+                height: 70,
+                width: 20,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
                 ),
-                Column(
-                  children: [
-                    Sciences(),
-                    Physique(),
-                    Maths(),
-                    Arabe(),
-                    French(),
-                    Ir(),
-                    English(),
-                    Sport(),
-                  ],
-                ),
-                GestureDetector(
-                  child: Container(
-                    margin: EdgeInsets.only(
-                        top: 30, bottom: 50, left: 30, right: 30),
-                    height: 70,
-                    width: 20,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(12),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Calculer',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 38,
-                          fontFamily: 'TitilliumWeb',
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                child: Center(
+                  child: Text(
+                    'Calculer',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 38,
+                      fontFamily: 'TitilliumWeb',
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ResultPage(),
-                      ),
-                    );
-                  },
                 ),
-              ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ResultPage(),
+                  ),
+                );
+              },
             ),
-          ),
-        ]),
+          ],
+        ),
       ),
     );
   }

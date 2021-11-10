@@ -2,7 +2,7 @@ import 'package:bac_note/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
-class WhoAreWePage extends StatelessWidget {
+class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,13 +13,13 @@ class WhoAreWePage extends StatelessWidget {
           child: Icon(
             Icons.arrow_back,
             color: Colors.black,
-            size: 28,
+            size: 32,
           ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => BacNote(),
+                builder: (context) => MainPage(),
               ),
             );
           },
