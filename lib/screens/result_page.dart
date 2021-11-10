@@ -1,7 +1,4 @@
-import 'package:bac_note/components/result_widget.dart';
-import 'package:bac_note/components/result_remark_widget.dart';
 import 'package:bac_note/screens/main_screen.dart';
-import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatefulWidget {
