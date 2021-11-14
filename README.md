@@ -1,16 +1,15 @@
-# bac_note
+# BacNote
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## The idea behing BacNote
 
-A few resources to get you started if this is your first Flutter project:
+when i was a high school senior i used all the time to take my calculator(or the calculator in my phone) and
+try to predict my note in the final exam.
+it was slightly complex calculation because you have to get all subjects's individual notes and adds them all together 
+and then divide the sum by 32.
+This application simplifies the whole thing in easy and beatifull.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Screenshots :
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](https://github.com/[babe-saleh-mahfoud]/[Bac-Note-Flutter-App]/blob/[master]/image.jpg?raw=true)
