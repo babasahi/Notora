@@ -43,9 +43,35 @@ class MainPage extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        child: ListView.builder(
-          itemBuilder: ((context, index) => SubjectNoteWidget(
-              subject: Provider.of<Subjects>(context).subjects[index])),
+        child: SingleChildScrollView(
+          physics: ScrollPhysics(),
+          child: Column(children: [
+            ListView.builder(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: Provider.of<Subjects>(context).subjects.length,
+              itemBuilder: ((context, index) => SubjectNoteWidget(
+                  subject: Provider.of<Subjects>(context).subjects[index])),
+            ),
+            GestureDetector(
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 18),
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 28),
+                decoration: BoxDecoration(
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                child: Center(
+                    child: Text(
+                  'Calculer',
+                  style: TextStyle(
+                      fontFamily: 'Inconsolata',
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold),
+                )),
+              ),
+            )
+          ]),
         ),
       ),
     );
