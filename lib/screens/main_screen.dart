@@ -4,15 +4,6 @@ import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
-double sciences = 0;
-double physics = 0;
-double maths = 0;
-double insrel = 0;
-double arabic = 0;
-double french = 0;
-double english = 0;
-double sport = 0;
-
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 
@@ -50,7 +41,7 @@ class MainPage extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        child: ListView(
+        child: ListView.builder(
           children: [
             SubjectNoteWidget(
               name: 'Sciences Naturelles ',
