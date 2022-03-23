@@ -1,4 +1,5 @@
 import 'package:bac_note/components/subjects.dart';
+import 'package:bac_note/screens/result_page.dart';
 import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
@@ -54,6 +55,10 @@ class MainPage extends StatelessWidget {
                   subject: Provider.of<Subjects>(context).subjects[index])),
             ),
             GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ResultPage()));
+              },
               child: Container(
                 padding: EdgeInsets.symmetric(vertical: 18),
                 margin: EdgeInsets.symmetric(vertical: 20, horizontal: 28),
