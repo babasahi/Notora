@@ -13,17 +13,6 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   void initState() {
-    moyenne = (sciences * 8 +
-            physics * 7 +
-            maths * 6 +
-            insrel * 2 +
-            arabic * 3 +
-            french * 3 +
-            english * 2 +
-            sport) /
-        32;
-
-    moyOrient = (sciences * 3 + physics * 2 + maths + moyenne) / 7;
     super.initState();
   }
 

@@ -42,9 +42,7 @@ class MainPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: ListView.builder(
-          itemCount: ,
-          itemBuilder: ((context, index) =>
-              SubjectNoteWidget(subject: subject)),
+          itemBuilder: ((context, index) => SizedBox()),
         ),
       ),
     );
