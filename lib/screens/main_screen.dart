@@ -42,73 +42,9 @@ class MainPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: ListView.builder(
-          children: [
-            SubjectNoteWidget(
-              name: 'Sciences Naturelles ',
-              note: sciences,
-            ),
-            SubjectNoteWidget(
-              name: 'Physique et Chimie',
-              note: physics,
-            ),
-            SubjectNoteWidget(
-              name: 'Mathématiques ',
-              note: maths,
-            ),
-            SubjectNoteWidget(
-              name: 'Instruction Réligieuse ',
-              note: insrel,
-            ),
-            SubjectNoteWidget(
-              name: 'Langue Arabe',
-              note: arabic,
-            ),
-            SubjectNoteWidget(
-              name: 'Langue Francais',
-              note: french,
-            ),
-            SubjectNoteWidget(
-              name: 'Langue Anglais ',
-              note: english,
-            ),
-            SubjectNoteWidget(
-              name: 'Sport',
-              note: sport,
-            ),
-            GestureDetector(
-              child: Container(
-                margin:
-                    EdgeInsets.only(top: 30, bottom: 50, left: 30, right: 30),
-                height: 70,
-                width: 20,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(12),
-                  ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Calculer',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 38,
-                      fontFamily: 'TitilliumWeb',
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ResultPage(),
-                  ),
-                );
-              },
-            ),
-          ],
+          itemCount: ,
+          itemBuilder: ((context, index) =>
+              SubjectNoteWidget(subject: subject)),
         ),
       ),
     );
