@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:bac_note/components/result_widget.dart';
 import 'package:bac_note/models/subject.dart';
 import 'package:flutter/material.dart';
