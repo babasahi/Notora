@@ -1,5 +1,3 @@
-import 'package:bac_note/components/subjects.dart';
-import 'package:bac_note/screens/result_page.dart';
 import 'package:bac_note/screens/who_are_we_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';

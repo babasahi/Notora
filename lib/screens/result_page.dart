@@ -1,4 +1,3 @@
-import 'package:bac_note/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatefulWidget {
