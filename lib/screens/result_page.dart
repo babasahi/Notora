@@ -1,4 +1,9 @@
+import 'dart:ffi';
+
+import 'package:bac_note/components/result_widget.dart';
+import 'package:bac_note/models/subject.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ResultPage extends StatefulWidget {
   @override
@@ -6,13 +11,22 @@ class ResultPage extends StatefulWidget {
 }
 
 class _ResultPageState extends State<ResultPage> {
-  late double moyenne;
+  String getOrientationGrade(List<Subject> subjects) {
+    double result =
+        (subjects[0].note * 3 + subjects[1].note * 2 + subjects[2].note) / 7;
+    return result.toString();
+  }
 
-  late double moyOrient;
-
-  @override
-  void initState() {
-    super.initState();
+  String getAverageGrade(List<Subject> subjects) {
+    double result = (subjects[0].note * subjects[0].coefficient +
+            subjects[1].note * subjects[1].coefficient +
+            subjects[2].note * subjects[2].coefficient +
+            subjects[3].note * subjects[3].coefficient +
+            subjects[4].note * subjects[4].coefficient +
+            subjects[5].note * subjects[5].coefficient +
+            subjects[6].note * subjects[6].coefficient) /
+        32;
+    return result.toStringAsFixed(3);
   }
 
   @override
@@ -34,8 +48,8 @@ class _ResultPageState extends State<ResultPage> {
       body: Center(
         child: Column(
           children: [
-            Text(moyenne.toString()),
-            Text(moyOrient.toString()),
+            ResultWidget(
+                grade: getAverageGrade(Provider.of<Subjects>(context).subjects))
           ],
         ),
       ),
