@@ -1,20 +1,18 @@
+import 'package:bac_note/models/subject.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 
 class SubjectNoteWidget extends StatefulWidget {
-  final String name;
-  double note;
-  SubjectNoteWidget({required this.name, required this.note});
+  final Subject subject;
+  SubjectNoteWidget({required this.subject});
   @override
   _SubjectNoteWidgetState createState() => _SubjectNoteWidgetState();
 }
 
 class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
-  late double noteValue;
-
   @override
   void initState() {
-    noteValue = 10;
+    widget.subject.note = 10;
     super.initState();
   }
 
@@ -34,10 +32,11 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
             ),
             child: Center(
               child: Text(
-                noteValue.toString(),
+                widget.subject.note.toString(),
                 style: kPercentStyle.copyWith(
-                    color:
-                        noteValue < 10 ? Colors.redAccent : Colors.greenAccent),
+                    color: widget.subject.note < 10
+                        ? Colors.redAccent
+                        : Colors.greenAccent),
               ),
             ),
           ),
@@ -53,7 +52,7 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
             ),
             child: Center(
               child: Text(
-                widget.name,
+                widget.subject.name,
                 style: kSubjectNameStyle,
               ),
             ),
@@ -69,14 +68,13 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
               ),
             ),
             child: Slider(
-              value: noteValue,
+              value: widget.subject.note,
               max: 20,
               min: 0,
               divisions: 80,
               onChanged: (double newValue) {
                 setState(() {
-                  noteValue = newValue;
-                  widget.note = newValue;
+                  widget.subject.note = newValue;
                 });
               },
             ),
