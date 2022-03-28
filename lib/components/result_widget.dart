@@ -29,6 +29,12 @@ class _ResultWidgetState extends State<ResultWidget>
   }
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(12),

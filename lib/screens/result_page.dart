@@ -16,6 +16,9 @@ class _ResultPageState extends State<ResultPage> {
   }
 
   String getAverageGrade(List<Subject> subjects) {
+    for (var subject in subjects) {
+      print('this is subject :' + subject.coefficient.toString());
+    }
     double result = (subjects[0].note * subjects[0].coefficient +
             subjects[1].note * subjects[1].coefficient +
             subjects[2].note * subjects[2].coefficient +
