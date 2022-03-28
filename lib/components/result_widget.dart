@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ResultWidget extends StatefulWidget {
   ResultWidget({required this.grade});
-  final String grade;
+  final double grade;
 
   @override
   _ResultWidgetState createState() => _ResultWidgetState();
@@ -51,7 +51,8 @@ class _ResultWidgetState extends State<ResultWidget>
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text((widget.grade), style: kMainResultLabelStyle),
+            Text(((widget.grade * ((controller.value))).toStringAsFixed(2)),
+                style: kMainResultLabelStyle),
             Container(
                 padding: EdgeInsets.only(top: 12),
                 child: Text('/ 20', style: kPercentStyle)),

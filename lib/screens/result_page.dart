@@ -15,7 +15,7 @@ class _ResultPageState extends State<ResultPage> {
     return result.toString();
   }
 
-  String getAverageGrade(List<Subject> subjects) {
+  double getAverageGrade(List<Subject> subjects) {
     for (var subject in subjects) {
       print('this is subject :' + subject.coefficient.toString());
     }
@@ -27,7 +27,7 @@ class _ResultPageState extends State<ResultPage> {
             subjects[5].note * subjects[5].coefficient +
             subjects[6].note * subjects[6].coefficient) /
         32;
-    return result.toStringAsFixed(3);
+    return result;
   }
 
   @override
