@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
     return Provider<Subjects>(
       create: (context) => Subjects(subjects: [
         Subject(name: 'Sciences Naturelles', coefficient: 8, note: 10),
-        Subject(name: 'Sciences Physiques', coefficient: 8, note: 10),
-        Subject(name: 'Mathematiques', coefficient: 8, note: 10),
-        Subject(name: 'Francais', coefficient: 8, note: 10),
-        Subject(name: 'Arabe', coefficient: 8, note: 10),
-        Subject(name: 'Anglais', coefficient: 8, note: 10),
-        Subject(name: 'Instruction Religieuse', coefficient: 8, note: 10),
-        Subject(name: 'Education Physique', coefficient: 8, note: 10)
+        Subject(name: 'Sciences Physiques', coefficient: 7, note: 10),
+        Subject(name: 'Mathematiques', coefficient: 6, note: 10),
+        Subject(name: 'Francais', coefficient: 3, note: 10),
+        Subject(name: 'Arabe', coefficient: 3, note: 10),
+        Subject(name: 'Anglais', coefficient: 2, note: 10),
+        Subject(name: 'Instruction Religieuse', coefficient: 2, note: 10),
+        Subject(name: 'Education Physique', coefficient: 1, note: 10)
       ]),
       builder: (context, child) => MaterialApp(
         title: 'BacNote',

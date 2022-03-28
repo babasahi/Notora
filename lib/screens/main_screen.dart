@@ -51,8 +51,8 @@ class MainPage extends StatelessWidget {
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               itemCount: Provider.of<Subjects>(context).subjects.length,
-              itemBuilder: ((context, index) => SubjectNoteWidget(
-                  subject: Provider.of<Subjects>(context).subjects[index])),
+              itemBuilder: ((context, index) =>
+                  SubjectNoteWidget(index: index)),
             ),
             GestureDetector(
               onTap: () {
