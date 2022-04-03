@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // COLORS:
 const Color kMainColor = Colors.white;
@@ -11,56 +12,59 @@ Color? kIconColor = Colors.black;
 Color kSelectedNaviagtionIcon = Colors.deepPurpleAccent;
 double kAppBarElevation = 1.5;
 
-final kMainLogo = TextStyle(
+final kMainLogo = GoogleFonts.ubuntuMono(
+    textStyle: TextStyle(
   color: kSecondaryColor,
   letterSpacing: -1,
   fontSize: 60,
-  fontFamily: 'UbuntuMono',
   fontWeight: FontWeight.w900,
-);
-const TextStyle kLogoStyle = TextStyle(
+));
+final TextStyle kLogoStyle = GoogleFonts.ubuntu(
+    textStyle: TextStyle(
   color: Colors.black,
   fontSize: 34,
-  fontFamily: 'Ubuntu',
   fontWeight: FontWeight.bold,
-);
-const TextStyle kMainResultStyle = TextStyle(
-  fontSize: 80,
-  fontFamily: 'Ubuntu',
-  fontWeight: FontWeight.bold,
-);
+));
 
-const TextStyle kPercentStyle = TextStyle(
+final TextStyle kMainResultStyle = GoogleFonts.ubuntu(
+    textStyle: TextStyle(
+  fontSize: 80,
+  fontWeight: FontWeight.bold,
+));
+
+final TextStyle kPercentStyle = GoogleFonts.ubuntu(
+    textStyle: TextStyle(
   fontSize: 20,
   color: Colors.black,
   fontFamily: 'Ubuntu',
   fontWeight: FontWeight.bold,
-);
+));
 
 const TextStyle kEmojiStyle = TextStyle(fontSize: 60);
-const TextStyle kCongratulationLabelStyle = TextStyle(
+final TextStyle kCongratulationLabelStyle = GoogleFonts.ubuntu(
+    textStyle: TextStyle(
   fontSize: 52,
   fontWeight: FontWeight.bold,
   fontStyle: FontStyle.italic,
-  fontFamily: 'Ubuntu',
-);
-const TextStyle kMainResultLabelStyle = TextStyle(
+));
+final TextStyle kMainResultLabelStyle = GoogleFonts.inconsolata(
+    textStyle: TextStyle(
   fontSize: 42,
-  fontFamily: 'Inconsolata',
   fontWeight: FontWeight.bold,
-);
+));
 
-const TextStyle kSecondaryResultLabelStyle = TextStyle(
+final TextStyle kSecondaryResultLabelStyle = GoogleFonts.inconsolata(
+    textStyle: TextStyle(
   fontSize: 30,
-  fontFamily: 'Inconsolata',
   fontWeight: FontWeight.normal,
-);
-const kWhoAreWeStyle = TextStyle(
-  fontFamily: 'Inconsolata',
+));
+
+final kWhoAreWeStyle = GoogleFonts.inconsolata(
+    textStyle: TextStyle(
   letterSpacing: 1,
   fontWeight: FontWeight.normal,
   fontSize: 22,
-);
+));
 
 const TextStyle kSecondaryResultStyle = TextStyle(
   fontSize: 55,
