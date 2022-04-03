@@ -9,10 +9,14 @@ class ResultPage extends StatefulWidget {
 }
 
 class _ResultPageState extends State<ResultPage> {
-  String getOrientationGrade(List<Subject> subjects) {
-    double result =
-        (subjects[0].note * 3 + subjects[1].note * 2 + subjects[2].note) / 7;
-    return result.toString();
+  double getOrientationGrade(List<Subject> subjects) {
+    double grade = getAverageGrade(subjects);
+    double result = (subjects[0].note * 3 +
+            subjects[1].note * 2 +
+            subjects[2].note +
+            grade) /
+        7;
+    return result;
   }
 
   double getAverageGrade(List<Subject> subjects) {
@@ -25,7 +29,8 @@ class _ResultPageState extends State<ResultPage> {
             subjects[3].note * subjects[3].coefficient +
             subjects[4].note * subjects[4].coefficient +
             subjects[5].note * subjects[5].coefficient +
-            subjects[6].note * subjects[6].coefficient) /
+            subjects[6].note * subjects[6].coefficient +
+            subjects[7].note * subjects[7].coefficient) /
         32;
     return result;
   }
@@ -46,13 +51,16 @@ class _ResultPageState extends State<ResultPage> {
           },
         ),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            ResultWidget(
-                grade: getAverageGrade(Provider.of<Subjects>(context).subjects))
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          ResultWidget(
+              grade: getAverageGrade(Provider.of<Subjects>(context).subjects)),
+          ResultWidget(
+              grade:
+                  getOrientationGrade(Provider.of<Subjects>(context).subjects))
+        ],
       ),
     );
   }

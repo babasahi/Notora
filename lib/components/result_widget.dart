@@ -38,8 +38,7 @@ class _ResultWidgetState extends State<ResultWidget>
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(12),
-      height: 190,
-      width: 340,
+      padding: EdgeInsets.symmetric(vertical: 12.0),
       decoration: BoxDecoration(
         color: Colors.greenAccent.withOpacity(controller.value),
         borderRadius: BorderRadius.all(
