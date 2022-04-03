@@ -19,6 +19,7 @@ dependencies:
   provider: ^6.0.2
   url_launcher: ^6.0.20
   awesome_fonts: ^0.0.1
+  font_awesome_flutter: ^10.1.0
 
 flutter_icons:
   android: "launcher_icon"

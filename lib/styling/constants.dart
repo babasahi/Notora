@@ -11,6 +11,13 @@ Color? kIconColor = Colors.black;
 Color kSelectedNaviagtionIcon = Colors.deepPurpleAccent;
 double kAppBarElevation = 1.5;
 
+final kMainLogo = TextStyle(
+  color: kSecondaryColor,
+  letterSpacing: -1,
+  fontSize: 60,
+  fontFamily: 'UbuntuMono',
+  fontWeight: FontWeight.w900,
+);
 const TextStyle kLogoStyle = TextStyle(
   color: Colors.black,
   fontSize: 34,
