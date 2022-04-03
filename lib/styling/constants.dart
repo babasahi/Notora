@@ -66,14 +66,15 @@ final kWhoAreWeStyle = GoogleFonts.inconsolata(
   fontSize: 22,
 ));
 
-const TextStyle kSecondaryResultStyle = TextStyle(
+final TextStyle kSecondaryResultStyle = GoogleFonts.titilliumWeb(
+    textStyle: TextStyle(
   fontSize: 55,
   fontFamily: 'TitilliumWeb',
   fontWeight: FontWeight.bold,
-);
-const TextStyle kSubjectNameStyle = TextStyle(
+));
+final TextStyle kSubjectNameStyle = GoogleFonts.inconsolata(
+    textStyle: TextStyle(
   fontSize: 28,
   color: Colors.black,
-  fontFamily: 'Inconsolata',
   fontWeight: FontWeight.bold,
-);
+));
