@@ -1,4 +1,6 @@
+import 'package:bac_note/models/subject.dart';
 import 'package:bac_note/screens/main_screen.dart';
+import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 

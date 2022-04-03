@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
 
+// COLORS:
+const Color kMainColor = Colors.white;
+Color kSecondaryColor = Color(0xFF0061EF);
+Color kAppBarColor = Colors.blueAccent.shade400;
+Color kTertiaryColor = Color(0xFFD3E3FD);
+Color kBackgroundColor = Colors.white70;
+Color kUnSelectedNavigationIconColor = Color(0xFFD3E3FD);
+Color? kIconColor = Colors.black;
+Color kSelectedNaviagtionIcon = Colors.deepPurpleAccent;
+double kAppBarElevation = 1.5;
+
 const TextStyle kLogoStyle = TextStyle(
   color: Colors.black,
   fontSize: 34,
@@ -36,6 +47,12 @@ const TextStyle kSecondaryResultLabelStyle = TextStyle(
   fontSize: 30,
   fontFamily: 'Inconsolata',
   fontWeight: FontWeight.normal,
+);
+const kWhoAreWeStyle = TextStyle(
+  fontFamily: 'Inconsolata',
+  letterSpacing: 1,
+  fontWeight: FontWeight.normal,
+  fontSize: 22,
 );
 
 const TextStyle kSecondaryResultStyle = TextStyle(
