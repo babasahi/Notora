@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+// WHO ARE WE
 class WhoAreWe extends StatefulWidget {
   @override
   State<WhoAreWe> createState() => _WhoAreWeState();
