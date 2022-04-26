@@ -82,7 +82,7 @@ Thanks so much for your interest in growing the reach of Notora!
 
 Notora is free and open-source software licensed under the GNU General Public License v3.0. All the codebase is written by [Babe Saleh Mahfoud](https://github.com/babe-saleh-mahfoud) and distributed under Creative Commons license (CC BY-SA 4.0 International).
 
-The above Illustration is attributed to [freepik.com]()
+The above Illustration is attributed to [freepik.com](https://www.freepik.com/)
 <br />
 
 ---
