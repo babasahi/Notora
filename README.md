@@ -51,10 +51,6 @@ it was slightly complex calculation because you have to get all subjects's indiv
 and then divide the sum by 32.
 This application simplifies the whole thing in easy and beatifull.
 
-# 📒 Wiki
-
-This project repository has [Notora](https://github.com/babe-saleh-mahfoud/notora/wiki) (currently WIP) that you should consider reading! It goes into detail about the project from a more technical aspect. If you are interested in learning more about the app itself, go ahead and check it out!
-
 # 👨‍💻 Tech stack
 
 Here's a brief high-level overview of the tech stack the Notora app uses:
