@@ -74,14 +74,13 @@ If you want to say thank you and/or support active development of Notora:
 - Add a GitHub Star to the project!
 - Tweet about the project on your Twitter!
   - Tag [@babe saleh mahfoud](https://www.linkedin.com/in/babe-saleh-mahfoud-519b52200/) and/or `#notora`
-- Leave us a review [on the iOS App Store](https://apps.apple.com/us/app/well-reboot-your-mindset/id1573357406)!
+- Leave us a review [on Google Play](https://apps.apple.com/us/app/well-reboot-your-mindset/id1573357406)!
 
 Thanks so much for your interest in growing the reach of Notora!
 
 # ⚠️ License
 
-Notora is free and open-source software licensed under the GNU General Public License v3.0. All designs were created by [Babe Saleh Mahfoud](https://github.com/babe-saleh-mahfoud) and distributed under Creative Commons license (CC BY-SA 4.0 International).
-
+Notora is free and open-source software licensed under the GNU General Public License v3.0. All the codebase is written by [Babe Saleh Mahfoud](https://github.com/babe-saleh-mahfoud) and distributed under Creative Commons license (CC BY-SA 4.0 International).
 <br />
 
 ---
