@@ -1,9 +1,10 @@
+import 'package:bac_note/services/provider.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ResultWidget extends StatefulWidget {
-  ResultWidget({required this.grade});
-  final double grade;
+  ResultWidget();
 
   @override
   _ResultWidgetState createState() => _ResultWidgetState();
@@ -50,7 +51,11 @@ class _ResultWidgetState extends State<ResultWidget>
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(((widget.grade * ((controller.value))).toStringAsFixed(2)),
+            Text(
+                ((Provider.of<Subjects>(context, listen: false)
+                            .getAverageGrade() *
+                        ((controller.value)))
+                    .toStringAsFixed(2)),
                 style: kMainResultLabelStyle),
             Container(
                 padding: EdgeInsets.only(top: 12),

@@ -1,6 +1,7 @@
 import 'package:bac_note/components/subjects.dart';
 import 'package:bac_note/screens/result_page.dart';
 import 'package:bac_note/screens/who_are_we_screen.dart';
+import 'package:bac_note/services/provider.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -48,7 +49,8 @@ class MainPage extends StatelessWidget {
             ListView.builder(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              itemCount: Provider.of<Subjects>(context).subjects.length,
+              itemCount:
+                  Provider.of<Subjects>(context, listen: false).subjects.length,
               itemBuilder: ((context, index) =>
                   SubjectNoteWidget(index: index)),
             ),

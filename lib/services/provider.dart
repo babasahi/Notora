@@ -5,6 +5,14 @@ class Subjects extends ChangeNotifier {
   List<Subject> subjects = [];
 
   Subjects({required this.subjects});
+  void updateSubjectGrade(int subjectIndex, double newValue) {
+    subjects.elementAt(subjectIndex).note = newValue;
+    notifyListeners();
+  }
+
+  Subject getSubject(int subjectIndex) {
+    return subjects.elementAt(subjectIndex);
+  }
 
   double getOrientationGrade() {
     double grade = getAverageGrade();

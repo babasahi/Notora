@@ -1,4 +1,4 @@
-import 'package:bac_note/models/subject.dart';
+import 'package:bac_note/services/provider.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -12,12 +12,6 @@ class SubjectNoteWidget extends StatefulWidget {
 
 class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
   @override
-  void initState() {
-    Provider.of<Subjects>(context, listen: false).subjects[widget.index].note =
-        10;
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +34,7 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
                     .toString(),
                 style: kPercentStyle.copyWith(
                     color: Provider.of<Subjects>(context, listen: false)
-                                .subjects[widget.index]
+                                .getSubject(widget.index)
                                 .note <
                             10
                         ? Colors.redAccent
@@ -61,7 +55,7 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
             child: Center(
               child: Text(
                 Provider.of<Subjects>(context, listen: false)
-                    .subjects[widget.index]
+                    .getSubject(widget.index)
                     .name,
                 style: kSubjectNameStyle,
               ),
@@ -79,16 +73,15 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
             ),
             child: Slider(
               value: Provider.of<Subjects>(context, listen: false)
-                  .subjects[widget.index]
+                  .getSubject(widget.index)
                   .note,
               max: 20,
               min: 0,
               divisions: 80,
               onChanged: (double newValue) {
                 setState(() {
-                  Provider.of<Subjects>(context, listen: false)
-                      .subjects[widget.index]
-                      .note = newValue;
+                  Provider.of<Subjects>(context)
+                      .updateSubjectGrade(widget.index, newValue);
                 });
               },
             ),
