@@ -1,6 +1,5 @@
 import 'package:bac_note/components/result_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class ResultPage extends StatefulWidget {
   @override
@@ -27,13 +26,7 @@ class _ResultPageState extends State<ResultPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          ResultWidget(
-              grade: getAverageGrade(Provider.of<Subjects>(context).subjects)),
-          ResultWidget(
-              grade:
-                  getOrientationGrade(Provider.of<Subjects>(context).subjects))
-        ],
+        children: [ResultWidget(), ResultWidget()],
       ),
     );
   }
