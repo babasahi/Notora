@@ -5,8 +5,6 @@ import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../models/subject.dart';
-
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 

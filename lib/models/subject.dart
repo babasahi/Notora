@@ -6,11 +6,6 @@ class Subject {
   Subject({required this.name, this.note = 10, required this.coefficient});
 }
 
-class Subjects {
-  final List<Subject> subjects;
-  Subjects({required this.subjects});
-}
-
 class WhoAreWeData {
   final String part1 =
       'Babe Saleh is a computer programmer who decided to start a software startup. graduated from Laayoune High School., with a baccalaureate in Natural Sciences and currently majoring in Computer Engineering at the Higher School of Technology (EST) in Casablanca.';

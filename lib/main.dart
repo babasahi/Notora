@@ -1,5 +1,6 @@
 import 'package:bac_note/models/subject.dart';
 import 'package:bac_note/screens/main_screen.dart';
+import 'package:bac_note/services/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -10,7 +11,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Provider<Subjects>(
+    return ChangeNotifierProvider<Subjects>(
       create: (context) => Subjects(subjects: [
         Subject(name: 'Sciences Naturelles', coefficient: 8, note: 10),
         Subject(name: 'Sciences Physiques', coefficient: 7, note: 10),
