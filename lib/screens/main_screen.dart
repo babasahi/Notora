@@ -19,7 +19,7 @@ class MainPage extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          'BacNote',
+          'Notora',
           style: kLogoStyle,
         ),
         actions: [

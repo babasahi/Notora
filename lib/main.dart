@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         Subject(name: 'Education Physique', coefficient: 1, note: 10)
       ]),
       builder: (context, child) => MaterialApp(
-        title: 'BacNote',
+        title: 'Notora',
         debugShowCheckedModeBanner: false,
         home: MainPage(),
       ),
