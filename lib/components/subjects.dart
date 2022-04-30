@@ -80,7 +80,7 @@ class _SubjectNoteWidgetState extends State<SubjectNoteWidget> {
               divisions: 80,
               onChanged: (double newValue) {
                 setState(() {
-                  Provider.of<Subjects>(context)
+                  Provider.of<Subjects>(context, listen: false)
                       .updateSubjectGrade(widget.index, newValue);
                 });
               },
