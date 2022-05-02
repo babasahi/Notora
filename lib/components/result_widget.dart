@@ -1,10 +1,10 @@
-import 'package:bac_note/services/provider.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class ResultWidget extends StatefulWidget {
-  ResultWidget();
+  ResultWidget({required this.label, required this.value});
+  final String label;
+  final double value;
 
   @override
   _ResultWidgetState createState() => _ResultWidgetState();
@@ -37,32 +37,35 @@ class _ResultWidgetState extends State<ResultWidget>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(12),
-      padding: EdgeInsets.symmetric(vertical: 12.0),
-      decoration: BoxDecoration(
-        color: Colors.greenAccent.withOpacity(controller.value),
-        borderRadius: BorderRadius.all(
-          Radius.circular(12),
+    return Column(
+      children: [
+        Container(
+          child: Center(child: Text(widget.label)),
         ),
-      ),
-      child: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-                ((Provider.of<Subjects>(context, listen: false)
-                            .getAverageGrade() *
-                        ((controller.value)))
-                    .toStringAsFixed(2)),
-                style: kMainResultLabelStyle),
-            Container(
-                padding: EdgeInsets.only(top: 12),
-                child: Text('/ 20', style: kPercentStyle)),
-          ],
+        Container(
+          margin: EdgeInsets.all(12),
+          padding: EdgeInsets.symmetric(vertical: 12.0),
+          decoration: BoxDecoration(
+            color: Colors.greenAccent.withOpacity(controller.value),
+            borderRadius: BorderRadius.all(
+              Radius.circular(12),
+            ),
+          ),
+          child: Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text((widget.value * ((controller.value))).toStringAsFixed(2),
+                    style: kMainResultLabelStyle),
+                Container(
+                    padding: EdgeInsets.only(top: 12),
+                    child: Text('/ 20', style: kPercentStyle)),
+              ],
+            ),
+          ),
         ),
-      ),
+      ],
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:bac_note/components/result_remark_widget.dart';
 import 'package:bac_note/components/result_widget.dart';
 import 'package:bac_note/services/provider.dart';
 import 'package:flutter/material.dart';
@@ -32,9 +33,13 @@ class _ResultPageState extends State<ResultPage> {
         ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [LabelWidget(), ResultWidget(), ResultWidget()],
+        children: [
+          Congratulation(),
+          SizedBox(height: MediaQuery.of(context).size.height / 6),
+          GradesWidget()
+        ],
       ),
     );
   }
@@ -85,6 +90,26 @@ class _LabelWidgetState extends State<LabelWidget> {
       child: Column(
         children: [Text(label), Image(image: AssetImage(imageAsset))],
       ),
+    );
+  }
+}
+
+class GradesWidget extends StatelessWidget {
+  const GradesWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ResultWidget(
+            label: 'Grade',
+            value: (Provider.of<Subjects>(context, listen: false)
+                .getAverageGrade())),
+        ResultWidget(
+            label: 'Orientation',
+            value: (Provider.of<Subjects>(context, listen: false)
+                .getOrientationGrade()))
+      ],
     );
   }
 }
