@@ -40,16 +40,25 @@ class _ResultWidgetState extends State<ResultWidget>
     return Column(
       children: [
         Container(
-          child: Center(child: Text(widget.label)),
+          decoration: BoxDecoration(
+            color: Colors.greenAccent.withOpacity(controller.value),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(12), topRight: Radius.circular(12)),
+          ),
+          margin: EdgeInsets.symmetric(horizontal: 84),
+          child: Center(
+              child: Text(
+            widget.label,
+            style:
+                TextStyle(fontSize: 26, color: Colors.blueGrey.withGreen(20)),
+          )),
         ),
         Container(
-          margin: EdgeInsets.all(12),
+          margin: EdgeInsets.only(bottom: 12, left: 12, right: 12, top: 0),
           padding: EdgeInsets.symmetric(vertical: 12.0),
           decoration: BoxDecoration(
             color: Colors.greenAccent.withOpacity(controller.value),
-            borderRadius: BorderRadius.all(
-              Radius.circular(12),
-            ),
+            borderRadius: BorderRadius.all(Radius.circular(12)),
           ),
           child: Center(
             child: Row(

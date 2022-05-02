@@ -36,8 +36,9 @@ class _ResultPageState extends State<ResultPage> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Congratulation(),
-          SizedBox(height: MediaQuery.of(context).size.height / 6),
+          Provider.of<Subjects>(context, listen: false).getAverageGrade() > 8
+              ? Congratulation()
+              : Consolation(),
           GradesWidget()
         ],
       ),
