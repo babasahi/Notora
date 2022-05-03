@@ -2,15 +2,15 @@
 
 <div align='center'>
   
-<a href='https://github.com/babe-saleh-mahfoud/notora/releases'>
+<a href='https://github.com/babe-saleh-mahfoud/Notora/releases'>
   
-<img src='https://img.shields.io/github/v/release/babe-saleh-mahfoud/notora?color=%23FDD835&label=version&style=for-the-badge'>
+<img src='https://img.shields.io/github/v/release/babe-saleh-mahfoud/Notora?color=%23FDD835&label=version&style=for-the-badge'>
   
 </a>
   
-<a href='https://github.com/babe-saleh-mahfoud/notora/blob/main/LICENSE'>
+<a href='https://github.com/babe-saleh-mahfoud/Notora/blob/main/LICENSE'>
   
-<img src='https://img.shields.io/github/license/babe-saleh-mahfoud/notora?style=for-the-badge'>
+<img src='https://img.shields.io/github/license/babe-saleh-mahfoud/Notora?style=for-the-badge'>
   
 </a>
   <img src='https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white'>
@@ -32,12 +32,12 @@
 
 <div align="center">
 
-**[PROJECT PHILOSOPHY](https://github.com/babe-saleh-mahfoud/notora#-project-philosophy) •
-[WIKI](https://github.com/babe-saleh-mahfoud/notora#-wiki) •
-[TECH STACK](https://github.com/babe-saleh-mahfoud/notora#-tech-stack) •
-[CONTRIBUTING](https://github.com/babe-saleh-mahfoud/notora#%EF%B8%8F-contributing) •
-[SPREAD THE WORD](https://github.com/babe-saleh-mahfoud/notora#-spread-the-word) •
-[LICENSE](https://github.com/babe-saleh-mahfoud/notora#%EF%B8%8F-license)**
+**[PROJECT PHILOSOPHY](https://github.com/babe-saleh-mahfoud/Notora#-project-philosophy) •
+[WIKI](https://github.com/babe-saleh-mahfoud/Notora#-wiki) •
+[TECH STACK](https://github.com/babe-saleh-mahfoud/Notora#-tech-stack) •
+[CONTRIBUTING](https://github.com/babe-saleh-mahfoud/Notora#%EF%B8%8F-contributing) •
+[SPREAD THE WORD](https://github.com/babe-saleh-mahfoud/Notora#-spread-the-word) •
+[LICENSE](https://github.com/babe-saleh-mahfoud/Notora#%EF%B8%8F-license)**
 
 </div>
 
@@ -45,11 +45,11 @@
 
 # 🧐 Project philosophy
 
-When i was a high school senior i used all the time to take my calculator(or the calculator in my phone) and
-try to predict my note in the final exam.
-it was slightly complex calculation because you have to get all subjects's individual notes and adds them all together
+When I was a high school senior I used all the time to take my calculator(or the calculator on my phone) and
+try to predict my note for the final exam.
+it was a slightly complex calculation because you have to get all subjects' notes and add them all together
 and then divide the sum by 32.
-This application simplifies the whole thing in easy and beatifull.
+This application simplifies the whole thing in easy and beautiful.
 
 # 👨‍💻 Tech stack
 
