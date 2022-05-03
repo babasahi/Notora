@@ -20,6 +20,14 @@
 
 ---
 
+### Preview 
+
+Home Page              |  Result Page
+:-------------------------:|:-------------------------:
+![Screenshot 1](screenshots/image1.png)  |  ![Screenshot 2](screenshots/image2.png)
+
+---
+
 ### Notora is Coming soon! 🥳 🚀
 
 - Android: coming soon 👀
