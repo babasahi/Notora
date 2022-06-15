@@ -4,7 +4,7 @@ import 'package:bac_note/services/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-enum result {
+enum Result {
   success,
   failure,
   secondChance,
@@ -41,55 +41,6 @@ class _ResultPageState extends State<ResultPage> {
               : Consolation(),
           GradesWidget()
         ],
-      ),
-    );
-  }
-}
-
-class LabelWidget extends StatefulWidget {
-  const LabelWidget({Key? key}) : super(key: key);
-
-  @override
-  State<LabelWidget> createState() => _LabelWidgetState();
-}
-
-class _LabelWidgetState extends State<LabelWidget> {
-  result gradeResult = result.success;
-  double grade = 0;
-  String label = '';
-  String imageAsset = '';
-  void setAssets() {
-    if (gradeResult == result.success) {
-      label = 'Congratulations !';
-      imageAsset = 'assets/images/succes.jpg';
-    } else if (gradeResult == result.secondChance) {
-      label = 'You did it !';
-      imageAsset = 'assets/images/chance.jpg';
-    } else {
-      label = 'Failure is succes in progress !';
-      imageAsset = 'assets/images/failure.jpg';
-    }
-  }
-
-  @override
-  void initState() {
-    grade = Provider.of<Subjects>(context, listen: false).getAverageGrade();
-    if (grade > 8 && grade < 9) {
-      gradeResult = result.secondChance;
-    } else if (grade > 9) {
-      gradeResult = result.success;
-    } else {
-      gradeResult = result.failure;
-    }
-
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [Text(label), Image(image: AssetImage(imageAsset))],
       ),
     );
   }
