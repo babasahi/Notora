@@ -45,38 +45,44 @@ class MainPage extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           physics: ScrollPhysics(),
-          child: Column(children: [
-            ListView.builder(
-              shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
-              itemCount:
-                  Provider.of<Subjects>(context, listen: false).subjects.length,
-              itemBuilder: ((context, index) =>
-                  SubjectNoteWidget(index: index)),
-            ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ResultPage()));
-              },
-              child: Container(
-                padding: EdgeInsets.symmetric(vertical: 18),
-                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 28),
-                decoration: BoxDecoration(
-                  color: Colors.redAccent,
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
-                ),
-                child: Center(
-                    child: Text(
-                  'Calculer',
-                  style: TextStyle(
-                      fontFamily: 'Inconsolata',
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold),
-                )),
+          child: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/vect.jpg'))),
+            child: Column(children: [
+              ListView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: Provider.of<Subjects>(context, listen: false)
+                    .subjects
+                    .length,
+                itemBuilder: ((context, index) =>
+                    SubjectNoteWidget(index: index)),
               ),
-            )
-          ]),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ResultPage()));
+                },
+                child: Container(
+                  padding: EdgeInsets.symmetric(vertical: 18),
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 28),
+                  decoration: BoxDecoration(
+                    color: Colors.redAccent,
+                    borderRadius: BorderRadius.all(Radius.circular(12)),
+                  ),
+                  child: Center(
+                      child: Text(
+                    'Calculer',
+                    style: TextStyle(
+                        fontFamily: 'Inconsolata',
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold),
+                  )),
+                ),
+              )
+            ]),
+          ),
         ),
       ),
     );
