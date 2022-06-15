@@ -8,13 +8,13 @@ class Subject {
 
 class WhoAreWeData {
   final String part1 =
-      'Babe Saleh is a computer programmer who decided to start a software startup. graduated from Laayoune High School., with a baccalaureate in Natural Sciences and currently majoring in Computer Engineering at the Higher School of Technology (EST) in Casablanca.';
+      'Babe Saleh Mahfoud est un développeur d\'applications mobiles qui a décidé de démarrer une startup technologique pour produire des idées commerciales créatives. Diplômé du lycée de Laâyoune avec un baccalauréat en sciences naturelles et actuellement en majeure en génie informatique à l\'École Supérieure de Technologie (EST) de Casablanca.';
   final String part2 =
-      'He has an aspiring vision in software development business particularly app development. And in 04/10/2021  he launched his first app, Telmidi.';
+      'Il a une vision aspirante dans le domaine du développement de logiciels, en particulier le développement d\'applications. Et le 10/04/2021, il a lancé sa première application, Telmidi.';
   final String part3 =
-      'Telmidi is a platform that helps high school students to master their curriculum in an easy and interactive way, it\'s free and always will be free.';
+      'Telmidi est une plateforme qui aide les lycéens à maîtriser leur cursus de manière simple et interactive, c\'est gratuit et le sera toujours.';
   final String part4 =
-      'If you are a graphic designer, consider joining us by emailing: telmidi.contact@gmail.com.';
+      'Si vous êtes graphiste, pensez à nous rejoindre en envoyant un mail à : telmidi.contact@gmail.com.';
   final String part5 =
-      'All images and vector materials used in this software, are attributed to vecteezy.com and  flaticons.com ';
+      'Toutes les images et tous les matériaux vectoriels utilisés dans ce logiciel sont attribués à vecteezy.com et flaticons.com';
 }
