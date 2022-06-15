@@ -48,7 +48,7 @@ class MainPage extends StatelessWidget {
             decoration: BoxDecoration(
                 image: DecorationImage(
               image: AssetImage('assets/images/vect.jpg'),
-              fit: BoxFit.filld,
+              fit: BoxFit.fill,
             )),
           ),
         ),

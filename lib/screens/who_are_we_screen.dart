@@ -89,7 +89,7 @@ class _WhoAreWeState extends State<WhoAreWe> {
                       CircleAvatar(
                           radius: 60,
                           backgroundImage:
-                              AssetImage('assets/images/whoarewe/saleh.png')),
+                              AssetImage('assets/images/saleh.png')),
                       SizedBox(height: 12),
                       Text(
                         'Babe Saleh Mahfoud',
