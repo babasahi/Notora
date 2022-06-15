@@ -74,15 +74,10 @@ class _WhoAreWeState extends State<WhoAreWe> {
               Center(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 45.0),
-                  child: Text(
-                    'Telmidi',
-                    style: kMainLogo,
-                  ),
+                  child: Text('Telmidi', style: kMainLogo),
                 ),
               ),
-              SizedBox(
-                height: 30,
-              ),
+              SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: Container(
@@ -92,29 +87,23 @@ class _WhoAreWeState extends State<WhoAreWe> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CircleAvatar(
-                        radius: 60,
-                        backgroundImage:
-                            AssetImage('assets/images/whoarewe/saleh.jpg'),
-                      ),
-                      SizedBox(
-                        height: 12,
-                      ),
+                          radius: 60,
+                          backgroundImage:
+                              AssetImage('assets/images/whoarewe/saleh.png')),
+                      SizedBox(height: 12),
                       Text(
                         'Babe Saleh Mahfoud',
                         style: TextStyle(
-                          fontFamily: 'Nunito',
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic,
-                          fontSize: 20,
-                        ),
+                            fontFamily: 'Nunito',
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+                            fontSize: 20),
                       ),
                     ],
                   ),
                 ),
               ),
-              SizedBox(
-                height: 60,
-              ),
+              SizedBox(height: 60),
               Container(
                 color: Colors.white,
                 margin: EdgeInsets.all(12),
