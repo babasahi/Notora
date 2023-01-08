@@ -8,32 +8,36 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // WHO ARE WE
 class WhoAreWe extends StatelessWidget {
   @override
-  final String _landingPage = "https://mohamed-abdelahi-haibelty.github.io";
-  final String _email =
+  static const String _landingPage =
+      "https://mohamed-abdelahi-haibelty.github.io";
+  static const String _email =
       "mailto:<babesalehmahfoud@gmail.com>?subject=Hello Telmidi&body=Hello";
-  final String _linkedin = 'linkedin.com/in/babe-saleh-mahfoud-519b52200/';
-  final String _facebook = "";
-  final String _call = "tel:+222 31 04 81 16";
+  static const String _linkedin =
+      'linkedin.com/in/babe-saleh-mahfoud-519b52200/';
+  static const String _facebook = "";
+  static const String _call = "tel:+222 31 04 81 16";
   Future<void> sendEmail(String type) async {
     switch (type) {
       case "website":
-        await canLaunch(_landingPage) ? launch(_landingPage) : print('error');
+        await canLaunchUrl(Uri.parse(_landingPage))
+            ? launchUrl(Uri.parse(_landingPage))
+            : print('error');
 
         break;
       case "email":
-        await launch(_email);
+        await launchUrl(Uri.parse(_email));
         break;
 
       case "facebook":
-        await launch(_facebook);
+        await launchUrl(Uri.parse(_facebook));
         break;
 
       case "call":
-        await launch(_call);
+        await launchUrl(Uri.parse(_call));
         break;
 
       case "linkedin":
-        await launch(_linkedin);
+        await launchUrl(Uri.parse(_linkedin));
         break;
       default:
     }

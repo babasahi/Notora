@@ -40,11 +40,6 @@ class _ResultWidgetState extends State<ResultWidget>
     return Column(
       children: [
         Container(
-          decoration: BoxDecoration(
-            color: Colors.greenAccent.withOpacity(controller.value),
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(12), topRight: Radius.circular(12)),
-          ),
           margin: EdgeInsets.symmetric(horizontal: 84),
           child: Center(
               child: Text(
@@ -53,6 +48,7 @@ class _ResultWidgetState extends State<ResultWidget>
                 TextStyle(fontSize: 26, color: Colors.blueGrey.withGreen(20)),
           )),
         ),
+        SizedBox(height: 2),
         Container(
           margin: EdgeInsets.only(bottom: 12, left: 12, right: 12, top: 0),
           padding: EdgeInsets.symmetric(vertical: 12.0),
