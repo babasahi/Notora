@@ -1,5 +1,5 @@
 import 'package:bac_note/models/subject.dart';
-import 'package:bac_note/screens/main_screen.dart';
+import 'package:bac_note/screens/home_screen.dart';
 import 'package:bac_note/services/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

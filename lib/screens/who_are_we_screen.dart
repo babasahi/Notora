@@ -1,17 +1,13 @@
 import 'package:bac_note/models/subject.dart';
-import 'package:bac_note/screens/main_screen.dart';
+import 'package:bac_note/screens/home_screen.dart';
 import 'package:bac_note/styling/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 // WHO ARE WE
-class WhoAreWe extends StatefulWidget {
+class WhoAreWe extends StatelessWidget {
   @override
-  State<WhoAreWe> createState() => _WhoAreWeState();
-}
-
-class _WhoAreWeState extends State<WhoAreWe> {
   final String _landingPage = "https://mohamed-abdelahi-haibelty.github.io";
   final String _email =
       "mailto:<babesalehmahfoud@gmail.com>?subject=Hello Telmidi&body=Hello";
@@ -51,11 +47,7 @@ class _WhoAreWeState extends State<WhoAreWe> {
         backgroundColor: Colors.white,
         elevation: 1,
         leading: GestureDetector(
-          child: Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-            size: 32,
-          ),
+          child: Icon(Icons.arrow_back, color: Colors.black, size: 32),
           onTap: () {
             Navigator.push(
               context,
@@ -114,49 +106,32 @@ class _WhoAreWeState extends State<WhoAreWe> {
                       style: kWhoAreWeStyle,
                       textAlign: TextAlign.justify,
                     ),
-                    SizedBox(
-                      height: 68,
-                    ),
+                    SizedBox(height: 68),
                     SelectableText(
                       WhoAreWeData().part2,
                       style: kWhoAreWeStyle,
                       textAlign: TextAlign.justify,
                     ),
-                    SizedBox(
-                      height: 68,
-                    ),
-                    SelectableText(
-                      WhoAreWeData().part3,
-                      style: kWhoAreWeStyle,
-                      textAlign: TextAlign.justify,
-                    ),
-                    SizedBox(
-                      height: 68,
-                    ),
-                    SelectableText(
-                      WhoAreWeData().part4,
-                      style: kWhoAreWeStyle,
-                      textAlign: TextAlign.justify,
-                    ),
-                    SizedBox(
-                      height: 38,
-                    ),
+                    SizedBox(height: 68),
+                    SelectableText(WhoAreWeData().part3,
+                        style: kWhoAreWeStyle, textAlign: TextAlign.justify),
+                    SizedBox(height: 68),
+                    SelectableText(WhoAreWeData().part4,
+                        style: kWhoAreWeStyle, textAlign: TextAlign.justify),
+                    SizedBox(height: 38),
                     SelectableText(
                       WhoAreWeData().part5,
                       style: kWhoAreWeStyle.copyWith(
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                        fontFamily: 'Source Sans Pro',
-                      ),
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
+                          fontFamily: 'Source Sans Pro'),
                       textAlign: TextAlign.justify,
                     ),
                   ],
                 ),
               ),
-              SizedBox(
-                height: 60,
-              ),
+              SizedBox(height: 60),
               Container(
                 color: kMainColor,
                 child: Column(
@@ -169,9 +144,7 @@ class _WhoAreWeState extends State<WhoAreWe> {
                           fontWeight: FontWeight.bold,
                           color: kSecondaryColor),
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
+                    SizedBox(height: 30),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -207,19 +180,16 @@ class _WhoAreWeState extends State<WhoAreWe> {
                                 color: kSecondaryColor)),
                       ],
                     ),
-                    SizedBox(
-                      height: 70,
-                    ),
+                    SizedBox(height: 70),
                     Center(
                       child: Padding(
                         padding: EdgeInsets.only(bottom: 6.0),
                         child: Text(
                           'All Rights Reserved, Telmidi 2021.',
                           style: TextStyle(
-                            fontFamily: 'Ubuntu',
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                          ),
+                              fontFamily: 'Ubuntu',
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),

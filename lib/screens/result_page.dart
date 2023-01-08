@@ -54,11 +54,11 @@ class GradesWidget extends StatelessWidget {
     return Column(
       children: [
         ResultWidget(
-            label: 'Grade',
+            label: 'Moyenne générale',
             value: (Provider.of<Subjects>(context, listen: false)
                 .getAverageGrade())),
         ResultWidget(
-            label: 'Orientation',
+            label: 'Moyenne d\'orientation',
             value: (Provider.of<Subjects>(context, listen: false)
                 .getOrientationGrade()))
       ],
