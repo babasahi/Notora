@@ -9,6 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  //u should use pagination.
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<Subjects>(
